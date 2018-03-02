@@ -1,0 +1,74 @@
+[32m[0228 15:36:56 @logger.py:74][0m Argv: remove_batchnorm.py
+[32m[0228 15:36:57 @parallel.py:282][0m [PrefetchDataZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0228 15:36:57 @interface.py:87][0m [5m[31mWRN[0m With trainer v2, setting tower in TrainConfig has no effect.
+[32m[0228 15:36:57 @interface.py:88][0m [5m[31mWRN[0m It's enough to set the tower when initializing the trainer.
+[32m[0228 15:36:58 @registry.py:122][0m linear0 input: [None, 1000]
+[32m[0228 15:36:58 @registry.py:130][0m linear0 output: [None, 504]
+[32m[0228 15:36:58 @registry.py:122][0m linear1 input: [None, 504]
+[32m[0228 15:36:58 @registry.py:130][0m linear1 output: [None, 504]
+[32m[0228 15:36:58 @registry.py:122][0m linear2 input: [None, 504]
+[32m[0228 15:36:58 @registry.py:130][0m linear2 output: [None, 504]
+[32m[0228 15:36:58 @registry.py:122][0m linear3 input: [None, 504]
+[32m[0228 15:36:58 @registry.py:130][0m linear3 output: [None, 504]
+[32m[0228 15:36:58 @registry.py:122][0m last_linear input: [None, 504]
+[32m[0228 15:36:58 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0228 15:36:58 @rsr_run.py:123][0m Parameter count: {'mults': 1394568, 'weights': 1396839}
+[32m[0228 15:36:58 @model_utils.py:49][0m [36mModel Parameters: 
+[0mname                shape           dim
+------------------  -----------  ------
+linear0/W:0         [1000, 504]  504000
+linear0/b:0         [504]           504
+linear0/bn/beta:0   [504]           504
+linear0/bn/gamma:0  [504]           504
+linear1/W:0         [504, 504]   254016
+linear1/b:0         [504]           504
+linear1/bn/beta:0   [504]           504
+linear1/bn/gamma:0  [504]           504
+linear2/W:0         [504, 504]   254016
+linear2/b:0         [504]           504
+linear2/bn/beta:0   [504]           504
+linear2/bn/gamma:0  [504]           504
+linear3/W:0         [504, 504]   254016
+linear3/b:0         [504]           504
+linear3/bn/beta:0   [504]           504
+linear3/bn/gamma:0  [504]           504
+last_linear/W:0     [504, 255]   128520
+last_linear/b:0     [255]           255[36m
+Total #vars=18, #params=1400871, size=5.34MB[0m
+[32m[0228 15:36:58 @base.py:196][0m Setup callbacks graph ...
+[32m[0228 15:36:59 @summary.py:34][0m Maintain moving average summary of 2 tensors.
+[32m[0228 15:36:59 @graph.py:90][0m Applying collection UPDATE_OPS of 8 ops.
+[32m[0228 15:36:59 @base.py:212][0m Creating the session ...
+[32m[0228 15:36:59 @base.py:220][0m Initializing the session ...
+[32m[0228 15:36:59 @sessinit.py:206][0m Variables to restore from dict: beta2_power:0, EMA/cross_entropy_loss/local_step:0, linear0/b:0, beta1_power:0, last_linear/b:0, linear2/b:0, EMA/cross_entropy_loss:0, linear3/W:0, last_linear/W:0, linear2/W:0, global_step:0, linear1/W:0, linear3/b:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/cross_entropy_loss/biased:0, linear0/W:0, linear1/b:0, EMA/train-error-top1/biased:0
+[32m[0228 15:36:59 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the graph, but not found in the dict: linear0/bn/beta:0, linear0/bn/gamma:0, linear0/bn/mean/EMA:0, linear0/bn/variance/EMA:0, linear1/bn/beta:0, linear1/bn/gamma:0, linear1/bn/mean/EMA:0, linear1/bn/variance/EMA:0, linear2/bn/beta:0, linear2/bn/gamma:0, linear2/bn/mean/EMA:0, linear2/bn/variance/EMA:0, linear3/bn/beta:0, linear3/bn/gamma:0, linear3/bn/mean/EMA:0, linear3/bn/variance/EMA:0
+[32m[0228 15:36:59 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0
+[32m[0228 15:36:59 @sessinit.py:219][0m Restoring from dict ...
+[32m[0228 15:37:00 @base.py:227][0m Graph Finalized.
+[32m[0228 15:37:00 @steps.py:127][0m Start training with global_step=6071835
+[32m[0228 15:37:00 @base.py:247][0m Start Epoch 1 ...
+[32m[0228 15:37:03 @base.py:257][0m Epoch 1 (global_step 6071845) finished, time:2.38 sec.
+[32m[0228 15:37:03 @saver.py:84][0m Model saved to no_bn_models/fcn2/model-6071845.
+[32m[0228 15:37:03 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 3912.4
+[32m[0228 15:37:03 @monitor.py:363][0m activation-summaries/linear0/output-rms: 0.70382
+[32m[0228 15:37:03 @monitor.py:363][0m activation-summaries/linear1/output-rms: 0.71215
+[32m[0228 15:37:03 @monitor.py:363][0m activation-summaries/linear2/output-rms: 0.72302
+[32m[0228 15:37:03 @monitor.py:363][0m activation-summaries/linear3/output-rms: 0.73818
+[32m[0228 15:37:03 @monitor.py:363][0m activation-summaries/output-rms: 0.057324
+[32m[0228 15:37:03 @monitor.py:363][0m cross_entropy_loss: 22.731
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/last_linear/W-rms: 18.76
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.1635
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/linear0/W-rms: 0.031653
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/linear0/b-rms: 13.026
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/linear1/W-rms: 0.066563
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/linear1/b-rms: 20.734
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/linear2/W-rms: 0.074014
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/linear2/b-rms: 16.68
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/linear3/W-rms: 0.018955
+[32m[0228 15:37:03 @monitor.py:363][0m param-summary/linear3/b-rms: 5.1752
+[32m[0228 15:37:03 @monitor.py:363][0m train-error-top1: 0.41089
+[32m[0228 15:37:03 @base.py:261][0m Training has finished!
+[32m[0228 15:37:03 @rsr_run.py:123][0m Parameter count: {'mults': 1394568, 'weights': 1396839}
+[32m[0228 15:37:03 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the checkpoint, but not found in the graph: beta1_power:0, beta2_power:0, global_step:0
+[32m[0228 15:37:03 @sessinit.py:116][0m Restoring checkpoint from no_bn_models/fcn2/model-6071845 ...
+[32m[0228 15:37:04 @develop.py:85][0m [5m[31mWRN[0m [Deprecated] Calling a predictor with one datapoint will be deprecated after 01 Mar. Call it with positional arguments instead!

@@ -1,0 +1,151 @@
+[32m[0301 22:19:17 @logger.py:74][0m Argv: /data/sls/u/meng/skanda/home/envs/tf2cpu/lib/python2.7/site-packages/ipykernel_launcher.py -f /run/user/23571/jupyter/kernel-2a60f33c-9a36-4435-8524-75c151f6f221.json
+[32m[0301 22:22:08 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 22:22:08 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 22:22:08 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 22:22:08 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 22:22:08 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 22:47:21 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 22:47:21 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 22:47:21 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 22:47:21 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 22:47:21 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 22:47:32 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 22:47:32 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 22:47:32 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 22:47:32 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 22:47:32 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 22:47:56 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 22:47:56 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 22:47:56 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 22:47:56 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 22:47:56 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 22:59:58 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 22:59:58 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 22:59:58 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 22:59:58 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 22:59:58 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:00:13 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:00:13 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:00:13 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:00:13 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:00:13 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:00:23 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:00:23 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:00:23 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:00:23 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:00:23 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:00:35 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:00:35 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:00:35 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:00:35 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:00:35 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:00:51 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:00:51 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:00:51 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:00:51 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:00:51 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:00:59 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:00:59 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:00:59 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:00:59 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:00:59 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:01:21 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:01:21 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:01:21 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:01:21 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:01:21 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:01:33 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:01:33 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:01:33 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:01:33 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:01:33 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:01:43 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:01:43 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:01:43 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:01:43 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:01:43 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:01:51 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:01:51 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:01:51 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:01:51 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:01:51 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:01:58 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:01:58 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:01:58 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:01:58 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:01:59 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:02:04 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:02:04 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:02:04 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:02:04 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:02:04 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:02:14 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:02:14 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:02:14 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:02:15 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:02:15 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:02:23 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:02:23 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:02:23 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:02:23 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:02:23 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:02:51 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:02:51 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:02:51 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:02:51 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:02:51 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:03:01 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:03:01 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:03:01 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:03:02 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:03:02 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:03:33 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:03:33 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:03:33 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:03:33 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:03:33 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:03:55 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:03:55 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:03:55 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:03:55 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:03:55 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:04:12 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:04:12 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:04:12 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:04:12 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:04:12 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:04:22 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:04:22 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:04:22 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:04:22 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:04:22 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:04:32 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:04:32 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:04:32 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:04:32 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:04:32 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:04:53 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:04:53 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:04:53 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:04:54 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:04:54 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:05:16 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:05:16 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:05:16 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:05:16 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:05:16 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:20:46 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:20:46 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:20:46 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:20:46 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:20:46 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:22:21 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:22:21 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:22:21 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:22:21 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:22:21 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 23:28:17 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 23:28:17 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 23:28:17 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 23:28:17 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 23:28:17 @sessinit.py:219][0m Restoring from dict ...

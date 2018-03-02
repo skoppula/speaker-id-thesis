@@ -1,0 +1,16 @@
+[32m[0301 21:31:51 @logger.py:74][0m Argv: /data/sls/u/meng/skanda/home/envs/tf2cpu/lib/python2.7/site-packages/ipykernel_launcher.py -f /run/user/23571/jupyter/kernel-2a60f33c-9a36-4435-8524-75c151f6f221.json
+[32m[0301 21:31:51 @registry.py:122][0m linear0 input: [None, 1000]
+[32m[0301 21:31:51 @registry.py:130][0m linear0 output: [None, 504]
+[32m[0301 21:31:51 @registry.py:122][0m linear1 input: [None, 504]
+[32m[0301 21:31:51 @registry.py:130][0m linear1 output: [None, 504]
+[32m[0301 21:31:51 @registry.py:122][0m linear2 input: [None, 504]
+[32m[0301 21:31:51 @registry.py:130][0m linear2 output: [None, 504]
+[32m[0301 21:31:51 @registry.py:122][0m linear3 input: [None, 504]
+[32m[0301 21:31:51 @registry.py:130][0m linear3 output: [None, 504]
+[32m[0301 21:31:51 @registry.py:122][0m last_linear input: [None, 504]
+[32m[0301 21:31:51 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0301 21:31:51 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 21:31:51 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0301 21:31:51 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the graph, but not found in the dict: linear0/bits_for_maxval_var:0, linear1/bits_for_maxval_var:0, linear2/bits_for_maxval_var:0, linear3/bits_for_maxval_var:0
+[32m[0301 21:31:51 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0301 21:31:51 @sessinit.py:219][0m Restoring from dict ...

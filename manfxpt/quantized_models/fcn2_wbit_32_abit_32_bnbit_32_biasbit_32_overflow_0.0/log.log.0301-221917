@@ -1,0 +1,12 @@
+[32m[0301 22:01:06 @logger.py:74][0m Argv: /data/sls/u/meng/skanda/home/envs/tf2cpu/lib/python2.7/site-packages/ipykernel_launcher.py -f /run/user/23571/jupyter/kernel-2a60f33c-9a36-4435-8524-75c151f6f221.json
+[32m[0301 22:01:12 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 22:01:12 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 22:01:12 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 22:01:12 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 22:01:12 @sessinit.py:219][0m Restoring from dict ...
+[32m[0301 22:01:12 @develop.py:85][0m [5m[31mWRN[0m [Deprecated] Calling a predictor with one datapoint will be deprecated after 01 Mar. Call it with positional arguments instead!
+[32m[0301 22:01:50 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0301 22:01:50 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0301 22:01:50 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0301 22:01:51 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0301 22:01:51 @sessinit.py:219][0m Restoring from dict ...

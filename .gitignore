@@ -1,0 +1,5 @@
+**/train_log/**
+**/.ipynb_checkpoints/**
+**/models/**
+**/slurm-logs/**
+**/slurm_logs/**
