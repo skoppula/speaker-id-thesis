@@ -1,0 +1,124 @@
+sls-sm-5 1
+SLURM_JOBID=81833
+SLURM_TASKID=5
+[32m[0321 09:33:38 @logger.py:74][0m Argv: drf_run.py --model_name=cnn --bitw=32 --bita=32 --quant_ends=True
+[32m[0321 09:35:22 @parallel.py:282][0m [PrefetchDataZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0321 09:35:22 @drf_run.py:140][0m Using 6 threads
+('whole utterance size', 75290)
+[32m[0321 09:35:27 @drf_run.py:165][0m 18822 utterances per val epoch
+[32m[0321 09:35:27 @drf_run.py:166][0m Using host: sls-sm-5
+[32m[0321 09:35:27 @inference_runner.py:80][0m InferenceRunner will eval 18822 iterations
+[32m[0321 09:35:27 @__init__.py:20][0m [5m[31mWRN[0m get_nr_gpu will not be automatically imported any more! Please do `from tensorpack.utils.gpu import get_nr_gpu`
+[32m[0321 09:35:27 @drf_run.py:188][0m Using GPU: 1
+[32m[0321 09:35:27 @interface.py:34][0m Automatically applying QueueInput on the DataFlow.
+[32m[0321 09:35:27 @input_source.py:193][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[0321 09:35:31 @training.py:108][0m Building graph for training tower 0 ...
+[32m[0321 09:35:31 @registry.py:122][0m conv0 input: [None, 50, 20, 1]
+[32m[0321 09:35:31 @drf_run.py:70][0m Quantizing weight conv0/W
+[32m[0321 09:35:31 @drf_run.py:70][0m Quantizing weight conv0/b
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing conv0/bn/beta
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing conv0/bn/gamma
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing conv0/bn/mean/EMA
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing conv0/bn/variance/EMA
+[32m[0321 09:35:34 @registry.py:130][0m conv0 output: [None, 10, 4, 6]
+[32m[0321 09:35:34 @registry.py:122][0m linear0 input: [None, 10, 4, 6]
+[32m[0321 09:35:34 @drf_run.py:70][0m Quantizing weight linear0/W
+[32m[0321 09:35:34 @drf_run.py:70][0m Quantizing weight linear0/b
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0321 09:35:34 @registry.py:130][0m linear0 output: [None, 256]
+[32m[0321 09:35:34 @registry.py:122][0m linear1 input: [None, 256]
+[32m[0321 09:35:34 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0321 09:35:34 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0321 09:35:34 @registry.py:130][0m linear1 output: [None, 256]
+[32m[0321 09:35:34 @registry.py:122][0m linear2 input: [None, 256]
+[32m[0321 09:35:34 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0321 09:35:34 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0321 09:35:34 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0321 09:35:34 @registry.py:130][0m linear2 output: [None, 256]
+[32m[0321 09:35:34 @registry.py:122][0m last_linear input: [None, 256]
+[32m[0321 09:35:34 @drf_run.py:70][0m Quantizing weight last_linear/W
+[32m[0321 09:35:34 @drf_run.py:70][0m Quantizing weight last_linear/b
+[32m[0321 09:35:34 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0321 09:35:35 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'tower0/last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'tower0/output:0' shape=(?, 255) dtype=float32>]
+[32m[0321 09:35:35 @regularize.py:81][0m regularize_cost() found 5 tensors.
+[32m[0321 09:35:35 @regularize.py:18][0m Applying regularizer for conv0/W:0, linear0/W:0, linear1/W:0, linear2/W:0, last_linear/W:0
+[32m[0321 09:35:35 @drf_run.py:123][0m Parameter count: {'mults': 265808, 'weights': 259979}
+[32m[0321 09:35:35 @model_utils.py:49][0m [36mModel Parameters: 
+[0mname                shape           dim
+------------------  ------------  -----
+conv0/W:0           [5, 5, 1, 6]    150
+conv0/b:0           [6]               6
+conv0/bn/beta:0     [6]               6
+conv0/bn/gamma:0    [6]               6
+linear0/W:0         [240, 256]    61440
+linear0/b:0         [256]           256
+linear0/bn/beta:0   [256]           256
+linear0/bn/gamma:0  [256]           256
+linear1/W:0         [256, 256]    65536
+linear1/b:0         [256]           256
+linear1/bn/beta:0   [256]           256
+linear1/bn/gamma:0  [256]           256
+linear2/W:0         [256, 256]    65536
+linear2/b:0         [256]           256
+linear2/bn/beta:0   [256]           256
+linear2/bn/gamma:0  [256]           256
+last_linear/W:0     [256, 255]    65280
+last_linear/b:0     [255]           255[36m
+Total #vars=18, #params=260519, size=0.99MB[0m
+[32m[0321 09:35:36 @base.py:196][0m Setup callbacks graph ...
+[32m[0321 09:35:37 @predict.py:42][0m Building predictor tower 'InferenceTower' on device /gpu:0 ...
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight conv0/W
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight conv0/b
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing conv0/bn/beta
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing conv0/bn/gamma
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing conv0/bn/mean/EMA
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing conv0/bn/variance/EMA
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight linear0/W
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight linear0/b
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0321 09:35:37 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight last_linear/W
+[32m[0321 09:35:37 @drf_run.py:70][0m Quantizing weight last_linear/b
+[32m[0321 09:35:37 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'tower0/last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'tower0/output:0' shape=(?, 255) dtype=float32>]
+[32m[0321 09:35:37 @drf_run.py:123][0m Parameter count: {'mults': 531616, 'weights': 519958}
+[32m[0321 09:35:37 @summary.py:34][0m Maintain moving average summary of 3 tensors.
+[32m[0321 09:35:37 @graph.py:90][0m Applying collection UPDATE_OPS of 8 ops.
+[32m[0321 09:35:38 @base.py:212][0m Creating the session ...
+2018-03-21 09:35:38.551618: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-21 09:35:49.994418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:03:00.0
+totalMemory: 11.90GiB freeMemory: 11.75GiB
+2018-03-21 09:35:49.994487: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:03:00.0, compute capability: 6.1)
+[32m[0321 09:43:29 @base.py:220][0m Initializing the session ...
+[32m[0321 09:43:29 @base.py:227][0m Graph Finalized.
+[32m[0321 09:43:29 @concurrency.py:36][0m Starting EnqueueThread QueueInput/input_queue ...
+[32m[0321 09:48:20 @base.py:247][0m Start Epoch 1 ...
+  0%|          |0/173481[00:00<?,?it/s]  0%|          |625/173481[03:01<13:58:30, 3.44it/s]  0%|          |654/173481[03:20<13:58:22, 3.44it/s]  0%|          |853/173481[06:02<25:55:03, 1.85it/s]  1%|          |882/173481[06:20<25:54:48, 1.85it/s]  1%|          |1093/173481[09:03<31:00:45, 1.54it/s]  1%|          |1116/173481[09:20<31:00:30, 1.54it/s]  1%|          |1339/173481[12:04<33:07:05, 1.44it/s]  1%|          |1362/173481[12:20<33:06:49, 1.44it/s]  1%|          |1585/173481[15:06<34:13:48, 1.39it/s]  1%|          |1608/173481[15:20<34:13:32, 1.39it/s]  1%|1         |1831/173481[18:09<34:47:00, 1.37it/s]  1%|1         |1848/173481[18:20<34:46:47, 1.37it/s]  1%|1         |2071/173481[21:12<35:29:25, 1.34it/s]  1%|1         |2100/173481[21:31<35:29:04, 1.34it/s]  1%|1         |2293/173481[24:12<37:02:26, 1.28it/s]  1%|1         |2322/173481[24:31<37:02:03, 1.28it/s]  1%|1         |2539/173481[27:15<36:11:03, 1.31it/s]  1%|1         |2562/173481[27:31<36:10:45, 1.31it/s]  2%|1         |2779/173481[30:24<36:44:16, 1.29it/s]  2%|1         |2802/173481[30:41<36:43:59, 1.29it/s]  2%|1         |3019/173481[33:27<36:23:52, 1.30it/s]  2%|1         |3042/173481[33:41<36:23:34, 1.30it/s]  2%|1         |3259/173481[36:28<35:56:10, 1.32it/s]  2%|1         |3282/173481[36:41<35:55:52, 1.32it/s]  2%|2         |3505/173481[39:30<35:26:02, 1.33it/s]  2%|2         |3516/173481[39:42<35:25:54, 1.33it/s]  2%|2         |3697/173481[42:30<39:51:40, 1.18it/s]  2%|2         |3714/173481[42:42<39:51:26, 1.18it/s]  2%|2         |3895/173481[45:49<43:31:50, 1.08it/s]  2%|2         |3912/173481[46:02<43:31:35, 1.08it/s]  2%|2         |4141/173481[48:52<39:15:28, 1.20it/s]  2%|2         |4170/173481[49:12<39:15:04, 1.20it/s]  3%|2         |4387/173481[51:54<36:57:15, 1.27it/s]  3%|2         |4416/173481[52:12<36:56:52, 1.27it/s]  3%|2         |4615/173481[54:56<37:09:33, 1.26it/s]  3%|2         |4638/173481[55:12<37:09:15, 1.26it/s]  3%|2         |4849/173481[57:57<36:40:03, 1.28it/s]  3%|2         |4872/173481[58:13<36:39:45, 1.28it/s]  3%|2         |5077/173481[1:00:58<36:51:47, 1.27it/s]  3%|2         |5100/173481[1:01:13<36:51:29, 1.27it/s]  3%|3         |5293/173481[1:04:16<39:49:34, 1.17it/s]  3%|3         |5316/173481[1:04:33<39:49:15, 1.17it/s]  3%|3         |5539/173481[1:07:18<37:07:14, 1.26it/s]  3%|3         |5562/173481[1:07:33<37:06:56, 1.26it/s]  3%|3         |5737/173481[1:10:20<40:00:39, 1.16it/s]  3%|3         |5754/173481[1:10:33<40:00:25, 1.16it/s]  3%|3         |5983/173481[1:13:23<37:18:16, 1.25it/s]  3%|3         |6012/173481[1:13:43<37:17:53, 1.25it/s]  4%|3         |6229/173481[1:16:26<35:54:57, 1.29it/s]  4%|3         |6252/173481[1:16:43<35:54:39, 1.29it/s]  4%|3         |6469/173481[1:19:29<35:36:21, 1.30it/s]  4%|3         |6492/173481[1:19:44<35:36:03, 1.30it/s]  4%|3         |6685/173481[1:22:32<37:20:51, 1.24it/s]  4%|3         |6696/173481[1:22:44<37:20:42, 1.24it/s]  4%|3         |6925/173481[1:25:36<36:24:03, 1.27it/s]  4%|4         |6954/173481[1:25:54<36:23:40, 1.27it/s]srun: got SIGCONT
+slurmstepd: *** JOB 81833 ON sls-sm-5 CANCELLED AT 2018-03-21T11:14:43 ***
+slurmstepd: *** STEP 81833.0 ON sls-sm-5 CANCELLED AT 2018-03-21T11:14:43 ***
+srun: forcing job termination

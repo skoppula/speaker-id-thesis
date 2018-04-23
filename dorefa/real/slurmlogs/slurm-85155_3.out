@@ -1,0 +1,9 @@
+sls-titanx-1 6
+SLURM_JOBID=85158
+SLURM_TASKID=3
+[32m[0328 12:07:23 @logger.py:74][0m Argv: drf_run.py --model_name=lcn --bitw=8 --bita=8 --quant_ends=True --load_ckpt=train_log/lcn_w_8_a_32_quant_ends_False/checkpoint
+srun: got SIGCONT
+slurmstepd: *** STEP 85158.0 ON sls-titanx-1 CANCELLED AT 2018-03-28T12:07:31 ***
+slurmstepd: *** JOB 85158 ON sls-titanx-1 CANCELLED AT 2018-03-28T12:07:31 ***
+srun: forcing job termination
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

@@ -1,0 +1,21 @@
+sls-tesla-1 1
+SLURM_JOBID=340356
+SLURM_TASKID=2
+../dorefa/real/train_log/lcn_w_4_a_32_quant_ends_False_preload/checkpoint
+[32m[0417 14:47:08 @logger.py:74][0m Argv: ttq_run.py --model_name=lcn --quant_ends=False --load_ckpt=../dorefa/real/train_log/lcn_w_4_a_32_quant_ends_False_preload/checkpoint
+[32m[0417 14:47:12 @parallel.py:282][0m [PrefetchDataZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0417 14:47:12 @ttq_run.py:140][0m Using 6 threads
+('whole utterance size', 75290)
+[32m[0417 14:47:13 @ttq_run.py:164][0m 18822 utterances per val epoch
+[32m[0417 14:47:13 @ttq_run.py:165][0m Using host: sls-tesla-1
+[32m[0417 14:47:13 @inference_runner.py:80][0m InferenceRunner will eval 18822 iterations
+[32m[0417 14:47:13 @__init__.py:20][0m [5m[31mWRN[0m get_nr_gpu will not be automatically imported any more! Please do `from tensorpack.utils.gpu import get_nr_gpu`
+Traceback (most recent call last):
+  File "ttq_run.py", line 183, in <module>
+    session_init=SaverRestore(args.load_ckpt) if args.load_ckpt else None
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/tfutils/sessinit.py", line 106, in __init__
+    model_path = get_checkpoint_path(model_path)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/tfutils/varmanip.py", line 153, in get_checkpoint_path
+    assert tf.gfile.Exists(model_path), model_path
+AssertionError: ../dorefa/real/train_log/lcn_w_4_a_32_quant_ends_False_preload/checkpoint
+srun: error: sls-tesla-1: task 0: Exited with exit code 1

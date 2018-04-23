@@ -1,0 +1,21 @@
+[32m[0228 21:57:34 @logger.py:74][0m Argv: remove_batchnorm.py
+[32m[0228 21:57:34 @registry.py:122][0m linear0 input: [None, 1000]
+[32m[0228 21:57:34 @registry.py:130][0m linear0 output: [None, 504]
+[32m[0228 21:57:34 @registry.py:122][0m linear1 input: [None, 504]
+[32m[0228 21:57:34 @registry.py:130][0m linear1 output: [None, 504]
+[32m[0228 21:57:34 @registry.py:122][0m linear2 input: [None, 504]
+[32m[0228 21:57:34 @registry.py:130][0m linear2 output: [None, 504]
+[32m[0228 21:57:34 @registry.py:122][0m linear3 input: [None, 504]
+[32m[0228 21:57:34 @registry.py:130][0m linear3 output: [None, 504]
+[32m[0228 21:57:34 @registry.py:122][0m last_linear input: [None, 504]
+[32m[0228 21:57:34 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0228 21:57:34 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0228 21:57:34 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, last_linear/W:0, linear1/b:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear2/b:0, linear3/b:0, linear0/W:0, linear1/W:0
+[32m[0228 21:57:34 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0
+[32m[0228 21:57:34 @sessinit.py:219][0m Restoring from dict ...
+[32m[0228 21:57:35 @collection.py:134][0m New collections created in : tf.GraphKeys.SAVERS, tf.GraphKeys.GLOBAL_STEP
+[32m[0228 21:57:35 @rsr_run.py:126][0m Parameter count: {'mults': 0, 'weights': 0}
+[32m[0228 21:57:35 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0228 21:57:35 @sessinit.py:116][0m Restoring checkpoint from no_bn_models/fcn2/model-0 ...
+[32m[0228 21:57:35 @develop.py:85][0m [5m[31mWRN[0m [Deprecated] Calling a predictor with one datapoint will be deprecated after 01 Mar. Call it with positional arguments instead!
+[32m[0228 21:57:43 @remove_batchnorm.py:139][0m Final cumulative utt accuracy after 1000 steps: [0.03]

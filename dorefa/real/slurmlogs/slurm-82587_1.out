@@ -1,0 +1,8 @@
+sls-titan-10 1
+SLURM_JOBID=82588
+SLURM_TASKID=1
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+slurmstepd: *** JOB 82588 ON sls-titan-10 CANCELLED AT 2018-03-23T10:57:18 ***
+srun: forcing job termination
+slurmstepd: *** STEP 82588.0 ON sls-titan-10 CANCELLED AT 2018-03-23T10:57:18 ***

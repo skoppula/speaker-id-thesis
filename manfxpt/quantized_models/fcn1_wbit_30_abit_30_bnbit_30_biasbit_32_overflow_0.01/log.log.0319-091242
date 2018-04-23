@@ -1,0 +1,8 @@
+[32m[0318 19:45:32 @logger.py:74][0m Argv: /data/sls/u/meng/skanda/home/envs/tf2cpu/lib/python2.7/site-packages/ipykernel_launcher.py -f /run/user/23571/jupyter/kernel-d9b38ed2-f812-4b78-bd71-db1e8311ec5c.json
+[32m[0318 19:45:35 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0318 19:45:35 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0318 19:45:35 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the graph, but not found in the dict: linear0/bits_for_maxval_var:0, linear1/bits_for_maxval_var:0, linear2/bits_for_maxval_var:0, linear3/bits_for_maxval_var:0
+[32m[0318 19:45:35 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0318 19:45:35 @sessinit.py:219][0m Restoring from dict ...
+[32m[0318 19:45:36 @collection.py:134][0m New collections created in : tf.GraphKeys.SAVERS, tf.GraphKeys.MODEL_VARIABLES
+[32m[0318 19:45:36 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)

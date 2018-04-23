@@ -1,0 +1,8 @@
+sls-1080-1 0
+SLURM_JOBID=85155
+SLURM_TASKID=5
+srun: got SIGCONT
+slurmstepd: *** JOB 85155 ON sls-1080-1 CANCELLED AT 2018-03-28T12:07:31 ***
+srun: forcing job termination
+slurmstepd: *** STEP 85155.0 ON sls-1080-1 CANCELLED AT 2018-03-28T12:07:31 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.

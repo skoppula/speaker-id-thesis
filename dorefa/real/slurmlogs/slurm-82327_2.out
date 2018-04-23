@@ -1,0 +1,257 @@
+sls-sm-13 2
+SLURM_JOBID=82329
+SLURM_TASKID=2
+[32m[0321 23:44:13 @logger.py:74][0m Argv: drf_run.py --model_name=cnn --bitw=4 --bita=4 --quant_ends=True
+[32m[0321 23:44:15 @parallel.py:282][0m [PrefetchDataZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0321 23:44:15 @drf_run.py:140][0m Using 5 threads
+('whole utterance size', 75290)
+[32m[0321 23:44:15 @drf_run.py:165][0m 18822 utterances per val epoch
+[32m[0321 23:44:15 @drf_run.py:166][0m Using host: sls-sm-13
+[32m[0321 23:44:15 @inference_runner.py:80][0m InferenceRunner will eval 18822 iterations
+[32m[0321 23:44:15 @__init__.py:20][0m [5m[31mWRN[0m get_nr_gpu will not be automatically imported any more! Please do `from tensorpack.utils.gpu import get_nr_gpu`
+[32m[0321 23:44:15 @drf_run.py:188][0m Using GPU: 2
+[32m[0321 23:44:15 @interface.py:34][0m Automatically applying QueueInput on the DataFlow.
+[32m[0321 23:44:15 @input_source.py:193][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[0321 23:44:15 @training.py:108][0m Building graph for training tower 0 ...
+[32m[0321 23:44:15 @registry.py:122][0m conv0 input: [None, 50, 20, 1]
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight conv0/W
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight conv0/b
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing conv0/bn/beta
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing conv0/bn/gamma
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing conv0/bn/mean/EMA
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing conv0/bn/variance/EMA
+[32m[0321 23:44:15 @registry.py:130][0m conv0 output: [None, 10, 4, 6]
+[32m[0321 23:44:15 @registry.py:122][0m linear0 input: [None, 10, 4, 6]
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight linear0/W
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight linear0/b
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0321 23:44:15 @registry.py:130][0m linear0 output: [None, 256]
+[32m[0321 23:44:15 @registry.py:122][0m linear1 input: [None, 256]
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0321 23:44:15 @registry.py:130][0m linear1 output: [None, 256]
+[32m[0321 23:44:15 @registry.py:122][0m linear2 input: [None, 256]
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0321 23:44:15 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0321 23:44:15 @registry.py:130][0m linear2 output: [None, 256]
+[32m[0321 23:44:15 @registry.py:122][0m last_linear input: [None, 256]
+[32m[0321 23:44:15 @drf_run.py:70][0m Quantizing weight last_linear/W
+[32m[0321 23:44:16 @drf_run.py:70][0m Quantizing weight last_linear/b
+[32m[0321 23:44:16 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0321 23:44:16 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'tower0/last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'tower0/output:0' shape=(?, 255) dtype=float32>]
+[32m[0321 23:44:16 @regularize.py:81][0m regularize_cost() found 5 tensors.
+[32m[0321 23:44:16 @regularize.py:18][0m Applying regularizer for conv0/W:0, linear0/W:0, linear1/W:0, linear2/W:0, last_linear/W:0
+[32m[0321 23:44:16 @drf_run.py:123][0m Parameter count: {'mults': 265808, 'weights': 259979}
+[32m[0321 23:44:17 @model_utils.py:49][0m [36mModel Parameters: 
+[0mname                shape           dim
+------------------  ------------  -----
+conv0/W:0           [5, 5, 1, 6]    150
+conv0/b:0           [6]               6
+conv0/bn/beta:0     [6]               6
+conv0/bn/gamma:0    [6]               6
+linear0/W:0         [240, 256]    61440
+linear0/b:0         [256]           256
+linear0/bn/beta:0   [256]           256
+linear0/bn/gamma:0  [256]           256
+linear1/W:0         [256, 256]    65536
+linear1/b:0         [256]           256
+linear1/bn/beta:0   [256]           256
+linear1/bn/gamma:0  [256]           256
+linear2/W:0         [256, 256]    65536
+linear2/b:0         [256]           256
+linear2/bn/beta:0   [256]           256
+linear2/bn/gamma:0  [256]           256
+last_linear/W:0     [256, 255]    65280
+last_linear/b:0     [255]           255[36m
+Total #vars=18, #params=260519, size=0.99MB[0m
+[32m[0321 23:44:17 @base.py:196][0m Setup callbacks graph ...
+[32m[0321 23:44:17 @predict.py:42][0m Building predictor tower 'InferenceTower' on device /gpu:0 ...
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight conv0/W
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight conv0/b
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing conv0/bn/beta
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing conv0/bn/gamma
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing conv0/bn/mean/EMA
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing conv0/bn/variance/EMA
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight linear0/W
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight linear0/b
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0321 23:44:17 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight last_linear/W
+[32m[0321 23:44:17 @drf_run.py:70][0m Quantizing weight last_linear/b
+[32m[0321 23:44:17 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'tower0/last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'tower0/output:0' shape=(?, 255) dtype=float32>]
+[32m[0321 23:44:17 @drf_run.py:123][0m Parameter count: {'mults': 531616, 'weights': 519958}
+[32m[0321 23:44:17 @summary.py:34][0m Maintain moving average summary of 3 tensors.
+[32m[0321 23:44:17 @graph.py:90][0m Applying collection UPDATE_OPS of 8 ops.
+[32m[0321 23:44:18 @base.py:212][0m Creating the session ...
+2018-03-21 23:44:18.334142: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-21 23:44:20.538476: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:81:00.0
+totalMemory: 11.90GiB freeMemory: 11.74GiB
+2018-03-21 23:44:20.538572: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:81:00.0, compute capability: 6.1)
+[32m[0321 23:44:26 @base.py:220][0m Initializing the session ...
+[32m[0321 23:44:26 @base.py:227][0m Graph Finalized.
+[32m[0321 23:44:26 @concurrency.py:36][0m Starting EnqueueThread QueueInput/input_queue ...
+[32m[0321 23:44:34 @base.py:247][0m Start Epoch 1 ...
+  0%|          |0/173481[00:00<?,?it/s] 10%|9         |16621/173481[03:00<28:18,92.33it/s] 10%|9         |17240/173481[03:10<28:12,92.33it/s] 16%|#5        |27621/173481[06:00<33:03,73.55it/s] 16%|#6        |28214/173481[06:10<32:55,73.55it/s] 22%|##1       |37966/173481[09:00<35:00,64.52it/s] 22%|##2       |38551/173481[09:10<34:51,64.52it/s] 28%|##7       |48456/173481[12:00<34:01,61.24it/s] 28%|##8       |49095/173481[12:10<33:51,61.24it/s] 34%|###4      |59446/173481[15:00<31:05,61.14it/s] 35%|###4      |60100/173481[15:10<30:54,61.14it/s] 40%|####      |70244/173481[18:00<28:24,60.56it/s] 41%|####      |70905/173481[18:10<28:13,60.56it/s] 46%|####6     |80541/173481[21:00<26:19,58.83it/s] 47%|####6     |81158/173481[21:11<26:09,58.83it/s] 52%|#####2    |90732/173481[24:00<23:54,57.70it/s] 53%|#####2    |91383/173481[24:11<23:42,57.70it/s] 58%|#####8    |101381/173481[27:00<20:34,58.42it/s] 59%|#####8    |102016/173481[27:11<20:23,58.42it/s] 64%|######4   |111886/173481[30:00<17:35,58.38it/s] 65%|######4   |112550/173481[30:11<17:23,58.38it/s] 71%|#######   |122576/173481[33:00<14:24,58.88it/s] 71%|#######1  |123250/173481[33:11<14:13,58.88it/s] 77%|#######6  |133197/173481[36:00<11:23,58.94it/s] 77%|#######7  |133845/173481[36:11<11:12,58.94it/s] 83%|########2 |143822/173481[39:00<08:22,58.98it/s] 83%|########3 |144482/173481[39:12<08:11,58.98it/s] 89%|########8 |153571/173481[42:00<05:52,56.47it/s] 89%|########8 |154251/173481[42:12<05:40,56.47it/s] 95%|#########4|164188/173481[45:00<02:41,57.70it/s] 95%|#########5|164913/173481[45:12<02:28,57.70it/s]2018-03-22 00:32:10.803078: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.803264: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.803375: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.803481: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.803542: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.803608: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.803694: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.803756: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.804598: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.804700: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.804777: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.804848: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.804916: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.804951: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.805071: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.805144: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.805172: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.805229: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.805291: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.806781: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.808023: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.808191: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.808341: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.808402: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.808442: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+2018-03-22 00:32:10.808538: W tensorflow/core/framework/op_kernel.cc:1192] Invalid argument: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+100%|#########9|173480/173481[47:35<00:00,60.74it/s]
+Traceback (most recent call last):
+  File "drf_run.py", line 189, in <module>
+    launch_train_with_config(config, SyncMultiGPUTrainerParameterServer([os.environ['CUDA_VISIBLE_DEVICES']], ps_device='gpu'))
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/train/interface.py", line 96, in launch_train_with_config
+    config.steps_per_epoch, config.starting_epoch, config.max_epoch)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/train/base.py", line 288, in train
+    [32m[0322 00:32:10 @input_source.py:148][0m EnqueueThread QueueInput/input_queue Exited.
+self.main_loop(steps_per_epoch, starting_epoch, max_epoch)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/utils/argtools.py", line 171, in wrapper
+    return func(*args, **kwargs)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/train/base.py", line 253, in main_loop
+    self.run_step()  # implemented by subclass
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/train/base.py", line 172, in run_step
+    self.hooked_sess.run(self.train_op)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 521, in run
+    run_metadata=run_metadata)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 892, in run
+    run_metadata=run_metadata)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 967, in run
+    raise six.reraise(*original_exc_info)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 952, in run
+    return self._sess.run(*args, **kwargs)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 1024, in run
+    run_metadata=run_metadata)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/training/monitored_session.py", line 827, in run
+    return self._sess.run(*args, **kwargs)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 889, in run
+    run_metadata_ptr)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1120, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1317, in _do_run
+    options, run_metadata)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/client/session.py", line 1336, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+
+Caused by op u'param-summary/conv0/W-histogram', defined at:
+  File "drf_run.py", line 189, in <module>
+    launch_train_with_config(config, SyncMultiGPUTrainerParameterServer([os.environ['CUDA_VISIBLE_DEVICES']], ps_device='gpu'))
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/train/interface.py", line 92, in launch_train_with_config
+    model._build_graph_get_cost, model.get_optimizer)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/utils/argtools.py", line 171, in wrapper
+    return func(*args, **kwargs)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/train/tower.py", line 161, in setup_graph
+    train_callbacks = self._setup_graph(input, get_cost_fn, get_opt_fn)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/train/trainers.py", line 90, in _setup_graph
+    self._make_get_grad_fn(input, get_cost_fn, get_opt_fn), get_opt_fn)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/graph_builder/training.py", line 153, in build
+    grad_list = DataParallelBuilder.build_on_towers(self.towers, get_grad_fn, devices)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/graph_builder/training.py", line 113, in build_on_towers
+    ret.append(func())
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/train/tower.py", line 188, in get_grad_fn
+    cost = get_cost_fn(*input.get_input_tensors())
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/tfutils/tower.py", line 206, in __call__
+    output = self._tower_fn(*args)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/graph_builder/model_desc.py", line 168, in _build_graph_get_cost
+    self.build_graph(*inputs)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/graph_builder/model_desc.py", line 116, in build_graph
+    self._build_graph(inputs)
+  File "drf_run.py", line 105, in _build_graph
+    add_param_summary(('.*/W', ['rms', 'histogram']))
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/tfutils/summary.py", line 192, in add_param_summary
+    add_tensor_summary(p, actions, name=name, collections=collections)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/tfutils/summary.py", line 134, in add_tensor_summary
+    SUMMARY_TYPES_DIC[typ]()
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorpack/tfutils/summary.py", line 123, in <lambda>
+    'histogram': lambda: tf.summary.histogram(name + '-histogram', x, collections=collections),
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/summary/summary.py", line 192, in histogram
+    tag=tag, values=values, name=scope)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/ops/gen_logging_ops.py", line 188, in _histogram_summary
+    "HistogramSummary", tag=tag, values=values, name=name)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 2956, in create_op
+    op_def=op_def)
+  File "/data/sls/u/meng/skanda/home/envs/tf2gpu/local/lib/python2.7/site-packages/tensorflow/python/framework/ops.py", line 1470, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+InvalidArgumentError (see above for traceback): Nan in summary histogram for: param-summary/conv0/W-histogram
+	 [[Node: param-summary/conv0/W-histogram = HistogramSummary[T=DT_FLOAT, _device="/job:localhost/replica:0/task:0/device:CPU:0"](param-summary/conv0/W-histogram/tag, conv0/W/read/_353)]]
+
+PrefetchDataZMQ successfully cleaned-up.
+srun: error: sls-sm-13: task 0: Exited with exit code 1

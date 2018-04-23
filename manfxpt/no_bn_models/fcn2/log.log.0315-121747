@@ -1,0 +1,16 @@
+[32m[0315 11:54:09 @logger.py:74][0m Argv: remove_batchnorm.py --model=fcn2 --load_ckpt=/data/sls/u/meng/skanda/home/thesis/manfxpt/models/sentfiltNone_fcn2_bnTrue_regTrue_noLRSchedule/checkpoint
+[32m[0315 11:54:09 @registry.py:122][0m linear0 input: [None, 1000]
+[32m[0315 11:54:09 @registry.py:130][0m linear0 output: [None, 504]
+[32m[0315 11:54:09 @registry.py:122][0m linear1 input: [None, 504]
+[32m[0315 11:54:09 @registry.py:130][0m linear1 output: [None, 504]
+[32m[0315 11:54:09 @registry.py:122][0m linear2 input: [None, 504]
+[32m[0315 11:54:09 @registry.py:130][0m linear2 output: [None, 504]
+[32m[0315 11:54:09 @registry.py:122][0m linear3 input: [None, 504]
+[32m[0315 11:54:09 @registry.py:130][0m linear3 output: [None, 504]
+[32m[0315 11:54:09 @registry.py:122][0m last_linear input: [None, 504]
+[32m[0315 11:54:09 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0315 11:54:09 @rsr_run.py:129][0m Parameter count: {'mults': 1394568, 'weights': 1396839}
+[32m[0315 11:54:09 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0315 11:54:10 @sessinit.py:116][0m Restoring checkpoint from no_bn_models/fcn2/model-0 ...
+[32m[0315 11:54:10 @develop.py:85][0m [5m[31mWRN[0m [Deprecated] Calling a predictor with one datapoint will be deprecated after 01 Mar. Call it with positional arguments instead!
+[32m[0315 11:54:35 @remove_batchnorm.py:139][0m Final cumulative utt accuracy after 1000 steps: [0.03]

@@ -100,23 +100,23 @@ if __name__ == '__main__':
     var_dict = load_chkpt_vars(ckpt_path)
     new_var_dict = fuse_bn_layers(var_dict)
 
-    with TowerContext('', is_training=False):
-        input = PlaceholderInput()
-        input.setup(model.get_inputs_desc())
-        model.build_graph(*input.get_input_tensors())
+    # with TowerContext('', is_training=False):
+    #     input = PlaceholderInput()
+    #     input.setup(model.get_inputs_desc())
+    #     model.build_graph(*input.get_input_tensors())
 
-        sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True))
-        init = sessinit.DictRestore(new_var_dict)
-        sess.run(tf.global_variables_initializer())
-        init.init(sess)
+    #     sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True))
+    #     init = sessinit.DictRestore(new_var_dict)
+    #     sess.run(tf.global_variables_initializer())
+    #     init.init(sess)
 
-        ms = ModelSaver(checkpoint_dir=outdir)
-        ms._setup_graph()
-        time = datetime.now().strftime('%m%d-%H%M%S')
-        ms.saver.export_meta_graph(os.path.join(ms.checkpoint_dir, 'graph-{}.meta'.format(time)), collection_list=tf.get_default_graph().get_all_collection_keys())
-        ms.saver.save(sess, ms.path, global_step=0, write_meta_graph=False)
+    #     ms = ModelSaver(checkpoint_dir=outdir)
+    #     ms._setup_graph()
+    #     time = datetime.now().strftime('%m%d-%H%M%S')
+    #     ms.saver.export_meta_graph(os.path.join(ms.checkpoint_dir, 'graph-{}.meta'.format(time)), collection_list=tf.get_default_graph().get_all_collection_keys())
+    #     ms.saver.save(sess, ms.path, global_step=0, write_meta_graph=False)
 
-        np.savez_compressed(os.path.join(outdir, 'params.npz'), **new_var_dict)
+    #     np.savez_compressed(os.path.join(outdir, 'params.npz'), **new_var_dict)
 
     val_dataflow, n_batches_val = create_dataflow('val', None, datadir, spkmap, None, context)
     val_generator = val_dataflow.get_data()
@@ -129,7 +129,7 @@ if __name__ == '__main__':
     predictor = OfflinePredictor(config)
 
     rc = tp.utils.stats.RatioCounter()
-    n_steps_inference=1000
+    n_steps_inference=n_batches_val
     for i in range(n_steps_inference):
         x,y = next(val_generator)
         outputs = predictor([x,y])[0]

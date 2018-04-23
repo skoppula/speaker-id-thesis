@@ -1,0 +1,1090 @@
+[32m[0409 11:21:57 @logger.py:74][0m Argv: prune.py --model=lcn --bitw=4 --bita=32 --quant_ends=False --dorefa=True
+[32m[0409 11:21:57 @prune.py:113][0m 18822 utterances per val epoch
+[32m[0409 11:21:57 @prune.py:114][0m Using host: sls-520-0
+[32m[0409 11:21:57 @prune.py:124][0m On prune rate 0
+[32m[0409 11:21:58 @registry.py:122][0m conv0a input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0a output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0b input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0b output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0c input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0c output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0d input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0d output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0e input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0e output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0f input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0f output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0g input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0g output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0h input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0h output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0i input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0i output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m conv0j input: [None, 10, 10, 1]
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:21:58 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m conv0j output: [None, 1, 1, 25]
+[32m[0409 11:21:58 @registry.py:122][0m linear1 input: [None, 10, 1, 25]
+[32m[0409 11:21:58 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:21:58 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m linear1 output: [None, 256]
+[32m[0409 11:21:58 @registry.py:122][0m linear2 input: [None, 256]
+[32m[0409 11:21:58 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:21:58 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m linear2 output: [None, 256]
+[32m[0409 11:21:58 @registry.py:122][0m linear3 input: [None, 256]
+[32m[0409 11:21:58 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:21:58 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:21:58 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:21:58 @registry.py:130][0m linear3 output: [None, 256]
+[32m[0409 11:21:58 @registry.py:122][0m last_linear input: [None, 256]
+[32m[0409 11:21:58 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:21:58 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:21:58 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0409 11:21:58 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:21:58 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:21:58 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:21:59 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:21:59 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:21:59 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:21:59 @develop.py:85][0m [5m[31mWRN[0m [Deprecated] Calling a predictor with one datapoint will be deprecated after 01 Mar. Call it with positional arguments instead!
+[32m[0409 11:22:32 @prune.py:154][0m error: [0.11269615]
+[32m[0409 11:22:32 @prune.py:124][0m On prune rate 0.001
+[32m[0409 11:22:32 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:22:32 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:22:32 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:22:32 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:22:32 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:22:32 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:22:32 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:22:32 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:22:32 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:22:33 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:22:33 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:22:33 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:22:33 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:22:33 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:22:33 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:22:33 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:22:33 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:22:33 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:22:33 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:22:33 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:22:33 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:22:33 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:22:46 @prune.py:154][0m error: [0.11269615]
+[32m[0409 11:22:46 @prune.py:124][0m On prune rate 0.005
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:22:47 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:22:47 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:22:47 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:22:47 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:22:47 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:22:47 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:22:47 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:22:47 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:22:47 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:22:47 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:22:48 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:22:48 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:22:48 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:23:01 @prune.py:154][0m error: [0.12696148]
+[32m[0409 11:23:01 @prune.py:124][0m On prune rate 0.01
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:23:01 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:23:01 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:23:01 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:23:02 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:23:02 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:23:02 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:23:02 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:23:02 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:23:02 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:23:02 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:23:02 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:23:02 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:23:02 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:23:02 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:23:02 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:23:02 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:23:02 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:23:15 @prune.py:154][0m error: [0.15121255]
+[32m[0409 11:23:15 @prune.py:124][0m On prune rate 0.02
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:23:16 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:23:16 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:23:16 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:23:16 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:23:16 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:23:16 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:23:16 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:23:16 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:23:16 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:23:16 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:23:17 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:23:17 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:23:17 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:23:30 @prune.py:154][0m error: [0.17403709]
+[32m[0409 11:23:30 @prune.py:124][0m On prune rate 0.03
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:23:30 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:23:30 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:23:30 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:23:30 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:23:31 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:23:31 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:23:31 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:23:31 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:23:31 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:23:31 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:23:31 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:23:31 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:23:31 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:23:31 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:23:31 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:23:31 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:23:31 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:23:44 @prune.py:154][0m error: [0.23680456]
+[32m[0409 11:23:44 @prune.py:124][0m On prune rate 0.04
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:23:45 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:23:45 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:23:45 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:23:45 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:23:45 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:23:45 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:23:45 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:23:45 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:23:45 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:23:45 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:23:46 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:23:46 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:23:46 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:23:59 @prune.py:154][0m error: [0.30813124]
+[32m[0409 11:23:59 @prune.py:124][0m On prune rate 0.05
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:23:59 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:23:59 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:23:59 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:23:59 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:23:59 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:23:59 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:23:59 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:23:59 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:23:59 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:23:59 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:00 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:24:00 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:00 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:24:13 @prune.py:154][0m error: [0.35520685]
+[32m[0409 11:24:13 @prune.py:124][0m On prune rate 0.1
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:24:13 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:24:13 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:24:13 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:24:13 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:24:13 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:24:13 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:24:14 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:24:14 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:24:14 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:24:14 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:24:14 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:24:14 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:24:14 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:24:14 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:24:14 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:14 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:24:14 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:14 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:24:27 @prune.py:154][0m error: [0.77746077]
+[32m[0409 11:24:27 @prune.py:124][0m On prune rate 0.15
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:24:28 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:24:28 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:24:28 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:24:28 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:24:28 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:24:28 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:24:28 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:24:28 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:24:28 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:24:28 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:29 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:24:29 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:29 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:24:42 @prune.py:154][0m error: [0.93295292]
+[32m[0409 11:24:42 @prune.py:124][0m On prune rate 0.25
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:24:42 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:24:42 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:24:42 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:24:42 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:24:42 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:24:42 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:24:42 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:24:42 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:24:42 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:24:42 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:43 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:24:43 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:43 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:24:56 @prune.py:154][0m error: [0.99001427]
+[32m[0409 11:24:56 @prune.py:124][0m On prune rate 0.5
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0a/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0a/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0a/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0a/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0a/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0a/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0b/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0b/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0b/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0b/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0b/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0b/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0c/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0c/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0c/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0c/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0c/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0c/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0d/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0d/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0d/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0d/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0d/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0d/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0e/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0e/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0e/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0e/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0e/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0e/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0f/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0f/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0f/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0f/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0f/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0f/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0g/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0g/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0g/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0g/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0g/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0g/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0h/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0h/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0h/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0h/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0h/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0h/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0i/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0i/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0i/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0i/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0i/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0i/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0j/W
+[32m[0409 11:24:56 @drf_run.py:61][0m Not quantizing conv0j/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0j/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0j/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0j/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing conv0j/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:24:56 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:24:56 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:24:56 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:24:56 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:24:56 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:24:56 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:24:56 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'conv0a/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0b/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0c/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0d/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0e/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0f/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0g/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0h/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0i/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'conv0j/bn/output:0' shape=(?, 1, 1, 25) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:24:56 @drf_run.py:123][0m Parameter count: {'mults': 2762388, 'weights': 287643}
+[32m[0409 11:24:56 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:57 @sessinit.py:206][0m Variables to restore from dict: conv0h/b:0, conv0i/bn/mean/EMA:0, conv0f/b:0, conv0c/bn/variance/EMA:0, conv0h/bn/mean/EMA:0, conv0d/bn/gamma:0, conv0j/bn/gamma:0, conv0c/bn/beta:0, conv0g/bn/variance/EMA:0, conv0g/b:0, conv0j/bn/variance/EMA:0, conv0h/bn/beta:0, conv0h/W:0, conv0i/bn/gamma:0, conv0d/bn/beta:0, conv0d/bn/variance/EMA:0, conv0b/bn/variance/EMA:0, conv0g/bn/beta:0, conv0e/bn/beta:0, conv0f/bn/beta:0, conv0f/W:0, conv0i/b:0, conv0f/bn/gamma:0, conv0e/b:0, conv0j/bn/mean/EMA:0, conv0c/b:0, conv0a/b:0, conv0b/W:0, linear1/bn/beta:0, linear3/W:0, conv0b/bn/beta:0, linear2/W:0, global_step:0, linear3/b:0, conv0f/bn/mean/EMA:0, conv0c/W:0, conv0g/bn/gamma:0, conv0j/bn/beta:0, linear1/bn/gamma:0, conv0a/bn/mean/EMA:0, conv0d/b:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear1/bn/variance/EMA:0, last_linear/W:0, conv0e/bn/variance/EMA:0, conv0a/W:0, conv0e/bn/gamma:0, conv0e/W:0, linear3/bn/gamma:0, linear3/bn/beta:0, conv0a/bn/beta:0, conv0e/bn/mean/EMA:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, conv0c/bn/gamma:0, linear3/bn/mean/EMA:0, conv0h/bn/gamma:0, linear2/bn/beta:0, linear1/W:0, conv0i/W:0, conv0b/b:0, last_linear/b:0, conv0f/bn/variance/EMA:0, linear1/b:0, conv0g/W:0, linear1/bn/mean/EMA:0, conv0c/bn/mean/EMA:0, conv0h/bn/variance/EMA:0, conv0i/bn/variance/EMA:0, conv0b/bn/gamma:0, conv0d/bn/mean/EMA:0, conv0d/W:0, conv0i/bn/beta:0, conv0j/b:0, conv0a/bn/variance/EMA:0, conv0b/bn/mean/EMA:0, conv0a/bn/gamma:0, conv0j/W:0, conv0g/bn/mean/EMA:0
+[32m[0409 11:24:57 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, conv0a/W/Adam:0, conv0a/W/Adam_1:0, conv0a/b/Adam:0, conv0a/b/Adam_1:0, conv0a/bn/beta/Adam:0, conv0a/bn/beta/Adam_1:0, conv0a/bn/gamma/Adam:0, conv0a/bn/gamma/Adam_1:0, conv0b/W/Adam:0, conv0b/W/Adam_1:0, conv0b/b/Adam:0, conv0b/b/Adam_1:0, conv0b/bn/beta/Adam:0, conv0b/bn/beta/Adam_1:0, conv0b/bn/gamma/Adam:0, conv0b/bn/gamma/Adam_1:0, conv0c/W/Adam:0, conv0c/W/Adam_1:0, conv0c/b/Adam:0, conv0c/b/Adam_1:0, conv0c/bn/beta/Adam:0, conv0c/bn/beta/Adam_1:0, conv0c/bn/gamma/Adam:0, conv0c/bn/gamma/Adam_1:0, conv0d/W/Adam:0, conv0d/W/Adam_1:0, conv0d/b/Adam:0, conv0d/b/Adam_1:0, conv0d/bn/beta/Adam:0, conv0d/bn/beta/Adam_1:0, conv0d/bn/gamma/Adam:0, conv0d/bn/gamma/Adam_1:0, conv0e/W/Adam:0, conv0e/W/Adam_1:0, conv0e/b/Adam:0, conv0e/b/Adam_1:0, conv0e/bn/beta/Adam:0, conv0e/bn/beta/Adam_1:0, conv0e/bn/gamma/Adam:0, conv0e/bn/gamma/Adam_1:0, conv0f/W/Adam:0, conv0f/W/Adam_1:0, conv0f/b/Adam:0, conv0f/b/Adam_1:0, conv0f/bn/beta/Adam:0, conv0f/bn/beta/Adam_1:0, conv0f/bn/gamma/Adam:0, conv0f/bn/gamma/Adam_1:0, conv0g/W/Adam:0, conv0g/W/Adam_1:0, conv0g/b/Adam:0, conv0g/b/Adam_1:0, conv0g/bn/beta/Adam:0, conv0g/bn/beta/Adam_1:0, conv0g/bn/gamma/Adam:0, conv0g/bn/gamma/Adam_1:0, conv0h/W/Adam:0, conv0h/W/Adam_1:0, conv0h/b/Adam:0, conv0h/b/Adam_1:0, conv0h/bn/beta/Adam:0, conv0h/bn/beta/Adam_1:0, conv0h/bn/gamma/Adam:0, conv0h/bn/gamma/Adam_1:0, conv0i/W/Adam:0, conv0i/W/Adam_1:0, conv0i/b/Adam:0, conv0i/b/Adam_1:0, conv0i/bn/beta/Adam:0, conv0i/bn/beta/Adam_1:0, conv0i/bn/gamma/Adam:0, conv0i/bn/gamma/Adam_1:0, conv0j/W/Adam:0, conv0j/W/Adam_1:0, conv0j/b/Adam:0, conv0j/b/Adam_1:0, conv0j/bn/beta/Adam:0, conv0j/bn/beta/Adam_1:0, conv0j/bn/gamma/Adam:0, conv0j/bn/gamma/Adam_1:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:57 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:25:10 @prune.py:154][0m error: [0.99286733]
+[32m[0409 11:25:10 @prune.py:156][0m Errors:[0.11269614835948645, 0.11269614835948645, 0.12696148359486448, 0.15121255349500715, 0.17403708987161198, 0.23680456490727533, 0.30813124108416545, 0.35520684736091296, 0.7774607703281027, 0.9329529243937232, 0.9900142653352354, 0.992867332382311]
+[32m[0409 11:25:10 @prune.py:157][0m Sparsities:[0.0, 0.0009665316755640699, 0.004953907871170681, 0.009949386997204332, 0.019936880978033054, 0.02989666078895313, 0.03998808290693928, 0.049940934175382194, 0.09992343960562736, 0.14990594503587254, 0.2499402413211345, 0.4999255181683705]

@@ -1,0 +1,7 @@
+sls-tesla-1 0
+SLURM_JOBID=82589
+SLURM_TASKID=2
+srun: got SIGCONT
+slurmstepd: *** JOB 82589 ON sls-tesla-1 CANCELLED AT 2018-03-23T10:57:18 ***
+srun: forcing job termination
+slurmstepd: *** STEP 82589.0 ON sls-tesla-1 CANCELLED AT 2018-03-23T10:57:18 ***

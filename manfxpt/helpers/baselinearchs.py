@@ -35,9 +35,6 @@ def cnn_net(inp, nl, context=50):
         l = FullyConnectedWithTrackedMults('linear2', l)
     return l
 
-def bnorm(x, name=None):
-    return BatchNorm('bn', x)
-
 def maxout1_net(inp, nl, context=50):
     # https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41939.pdf
     l = FullyConnectedWithTrackedMults('linear0',inp,nl=nl, out_dim=1000)

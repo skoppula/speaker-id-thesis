@@ -1,0 +1,70 @@
+[32m[0319 09:13:12 @logger.py:74][0m Argv: /data/sls/u/meng/skanda/home/envs/tf2cpu/lib/python2.7/site-packages/ipykernel_launcher.py -f /run/user/23571/jupyter/kernel-d9b38ed2-f812-4b78-bd71-db1e8311ec5c.json
+[32m[0319 09:13:21 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:13:21 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:13:21 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:13:21 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:13:21 @develop.py:85][0m [5m[31mWRN[0m [Deprecated] Calling a predictor with one datapoint will be deprecated after 01 Mar. Call it with positional arguments instead!
+[32m[0319 09:14:11 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:14:11 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:14:11 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:14:12 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:14:15 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:14:15 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:14:15 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:14:15 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:14:21 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:14:21 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:14:21 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:14:21 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:16:40 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:16:40 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:16:40 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:16:40 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:16:44 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:16:44 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:16:44 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:16:44 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:16:54 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:16:54 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:16:54 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:16:54 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:16:57 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:16:57 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:16:57 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:16:57 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:01 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:01 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:01 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:01 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:06 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:06 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:06 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:06 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:11 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:11 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:11 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:11 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:16 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:16 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:16 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:16 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:20 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:21 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:21 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:21 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:25 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:25 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:25 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:25 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:29 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:29 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:29 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:29 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:33 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:33 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:33 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:33 @sessinit.py:219][0m Restoring from dict ...
+[32m[0319 09:17:37 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0319 09:17:37 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0319 09:17:37 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0319 09:17:37 @sessinit.py:219][0m Restoring from dict ...

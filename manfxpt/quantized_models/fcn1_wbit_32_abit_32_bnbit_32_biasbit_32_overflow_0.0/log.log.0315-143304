@@ -1,0 +1,27 @@
+[32m[0315 13:37:45 @logger.py:74][0m Argv: /data/sls/u/meng/skanda/home/envs/tf2cpu/lib/python2.7/site-packages/ipykernel_launcher.py -f /run/user/23571/jupyter/kernel-84121bda-b384-49db-b4f7-62c0a89f6804.json
+[32m[0315 13:38:07 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0315 13:38:07 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0315 13:38:07 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the graph, but not found in the dict: linear0/bits_for_maxval_var:0, linear1/bits_for_maxval_var:0, linear2/bits_for_maxval_var:0, linear3/bits_for_maxval_var:0
+[32m[0315 13:38:07 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: global_step:0
+[32m[0315 13:38:07 @sessinit.py:219][0m Restoring from dict ...
+[32m[0315 13:38:08 @collection.py:134][0m New collections created in : tf.GraphKeys.SAVERS, tf.GraphKeys.MODEL_VARIABLES
+[32m[0315 13:38:08 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0315 14:12:02 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0315 14:12:02 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0315 14:12:02 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0315 14:12:02 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0315 14:12:02 @sessinit.py:219][0m Restoring from dict ...
+[32m[0315 14:12:02 @develop.py:85][0m [5m[31mWRN[0m [Deprecated] Calling a predictor with one datapoint will be deprecated after 01 Mar. Call it with positional arguments instead!
+[32m[0315 14:17:49 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0315 14:17:49 @collection.py:134][0m New collections created in : tf.GraphKeys.MODEL_VARIABLES
+[32m[0315 14:17:49 @collection.py:153][0m These collections were modified but restored in : (tf.GraphKeys.UPDATE_OPS: 0->4)
+[32m[0315 14:17:49 @sessinit.py:206][0m Variables to restore from dict: linear1/bits_for_maxval_var:0, last_linear/b:0, linear0/b:0, linear1/b:0, linear3/bits_for_maxval_var:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear0/bits_for_maxval_var:0, linear1/W:0, linear3/b:0, linear2/b:0, linear2/bits_for_maxval_var:0, linear0/W:0
+[32m[0315 14:17:49 @sessinit.py:219][0m Restoring from dict ...
+[32m[0315 14:19:30 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0315 14:19:30 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0315 14:19:30 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: linear0/bits_for_maxval_var:0, linear1/bits_for_maxval_var:0, linear2/bits_for_maxval_var:0, linear3/bits_for_maxval_var:0
+[32m[0315 14:19:30 @sessinit.py:219][0m Restoring from dict ...
+[32m[0315 14:20:19 @rsr_run.py:129][0m Parameter count: {'mults': 517888, 'weights': 519167}
+[32m[0315 14:20:19 @sessinit.py:206][0m Variables to restore from dict: last_linear/b:0, linear0/b:0, linear1/b:0, linear3/W:0, last_linear/W:0, linear2/W:0, linear2/b:0, linear1/W:0, linear3/b:0, linear0/W:0
+[32m[0315 14:20:19 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: linear0/bits_for_maxval_var:0, linear1/bits_for_maxval_var:0, linear2/bits_for_maxval_var:0, linear3/bits_for_maxval_var:0
+[32m[0315 14:20:19 @sessinit.py:219][0m Restoring from dict ...

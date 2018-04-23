@@ -1,0 +1,951 @@
+sls-titanx-1 4
+SLURM_JOBID=70356
+SLURM_TASKID=2
+[32m[0320 11:38:02 @logger.py:67][0m Existing log file 'train_log/cnn_w_4_a_32_quant_ends_False/log.log' backuped to 'train_log/cnn_w_4_a_32_quant_ends_False/log.log.0320-113802'
+[32m[0320 11:38:02 @logger.py:74][0m Argv: drf_run.py --model_name=cnn --bitw=4 --bita=32 --quant_ends=False
+[32m[0320 11:42:26 @parallel.py:282][0m [PrefetchDataZMQ] Will fork a dataflow more than one times. This assumes the datapoints are i.i.d.
+[32m[0320 11:42:26 @drf_run.py:140][0m Using 6 threads
+('whole utterance size', 75290)
+[32m[0320 11:42:27 @drf_run.py:165][0m 18822 utterances per val epoch
+[32m[0320 11:42:27 @drf_run.py:166][0m Using host: sls-titanx-1
+[32m[0320 11:42:27 @inference_runner.py:80][0m InferenceRunner will eval 18822 iterations
+[32m[0320 11:42:27 @__init__.py:20][0m [5m[31mWRN[0m get_nr_gpu will not be automatically imported any more! Please do `from tensorpack.utils.gpu import get_nr_gpu`
+[32m[0320 11:42:27 @drf_run.py:188][0m Using GPU: 4
+[32m[0320 11:42:27 @interface.py:34][0m Automatically applying QueueInput on the DataFlow.
+[32m[0320 11:42:27 @input_source.py:193][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[0320 11:42:27 @training.py:108][0m Building graph for training tower 0 ...
+[32m[0320 11:42:27 @registry.py:122][0m conv0 input: [None, 50, 20, 1]
+[32m[0320 11:42:27 @drf_run.py:61][0m Not quantizing conv0/W
+[32m[0320 11:42:27 @drf_run.py:61][0m Not quantizing conv0/b
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing conv0/bn/beta
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing conv0/bn/gamma
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing conv0/bn/mean/EMA
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing conv0/bn/variance/EMA
+[32m[0320 11:42:27 @registry.py:130][0m conv0 output: [None, 10, 4, 6]
+[32m[0320 11:42:27 @registry.py:122][0m linear0 input: [None, 10, 4, 6]
+[32m[0320 11:42:27 @drf_run.py:70][0m Quantizing weight linear0/W
+[32m[0320 11:42:27 @drf_run.py:70][0m Quantizing weight linear0/b
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0320 11:42:27 @registry.py:130][0m linear0 output: [None, 256]
+[32m[0320 11:42:27 @registry.py:122][0m linear1 input: [None, 256]
+[32m[0320 11:42:27 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0320 11:42:27 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0320 11:42:27 @registry.py:130][0m linear1 output: [None, 256]
+[32m[0320 11:42:27 @registry.py:122][0m linear2 input: [None, 256]
+[32m[0320 11:42:27 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0320 11:42:27 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0320 11:42:27 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0320 11:42:27 @registry.py:130][0m linear2 output: [None, 256]
+[32m[0320 11:42:27 @registry.py:122][0m last_linear input: [None, 256]
+[32m[0320 11:42:27 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0320 11:42:27 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0320 11:42:27 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0320 11:42:27 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'tower0/last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'tower0/output:0' shape=(?, 255) dtype=float32>]
+[32m[0320 11:42:27 @regularize.py:81][0m regularize_cost() found 5 tensors.
+[32m[0320 11:42:27 @regularize.py:18][0m Applying regularizer for conv0/W:0, linear0/W:0, linear1/W:0, linear2/W:0, last_linear/W:0
+[32m[0320 11:42:27 @drf_run.py:123][0m Parameter count: {'mults': 265808, 'weights': 259979}
+[32m[0320 11:42:28 @model_utils.py:49][0m [36mModel Parameters: 
+[0mname                shape           dim
+------------------  ------------  -----
+conv0/W:0           [5, 5, 1, 6]    150
+conv0/b:0           [6]               6
+conv0/bn/beta:0     [6]               6
+conv0/bn/gamma:0    [6]               6
+linear0/W:0         [240, 256]    61440
+linear0/b:0         [256]           256
+linear0/bn/beta:0   [256]           256
+linear0/bn/gamma:0  [256]           256
+linear1/W:0         [256, 256]    65536
+linear1/b:0         [256]           256
+linear1/bn/beta:0   [256]           256
+linear1/bn/gamma:0  [256]           256
+linear2/W:0         [256, 256]    65536
+linear2/b:0         [256]           256
+linear2/bn/beta:0   [256]           256
+linear2/bn/gamma:0  [256]           256
+last_linear/W:0     [256, 255]    65280
+last_linear/b:0     [255]           255[36m
+Total #vars=18, #params=260519, size=0.99MB[0m
+[32m[0320 11:42:28 @base.py:196][0m Setup callbacks graph ...
+[32m[0320 11:42:28 @predict.py:42][0m Building predictor tower 'InferenceTower' on device /gpu:0 ...
+[32m[0320 11:42:28 @drf_run.py:61][0m Not quantizing conv0/W
+[32m[0320 11:42:28 @drf_run.py:61][0m Not quantizing conv0/b
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing conv0/bn/beta
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing conv0/bn/gamma
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing conv0/bn/mean/EMA
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing conv0/bn/variance/EMA
+[32m[0320 11:42:28 @drf_run.py:70][0m Quantizing weight linear0/W
+[32m[0320 11:42:28 @drf_run.py:70][0m Quantizing weight linear0/b
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0320 11:42:28 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0320 11:42:28 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0320 11:42:28 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0320 11:42:28 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0320 11:42:28 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0320 11:42:28 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0320 11:42:28 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0320 11:42:28 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'tower0/last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'tower0/output:0' shape=(?, 255) dtype=float32>]
+[32m[0320 11:42:28 @drf_run.py:123][0m Parameter count: {'mults': 531616, 'weights': 519958}
+[32m[0320 11:42:28 @summary.py:34][0m Maintain moving average summary of 3 tensors.
+[32m[0320 11:42:28 @graph.py:90][0m Applying collection UPDATE_OPS of 8 ops.
+[32m[0320 11:42:29 @base.py:212][0m Creating the session ...
+2018-03-20 11:42:29.519400: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-03-20 11:42:34.622289: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:84:00.0
+totalMemory: 11.90GiB freeMemory: 11.75GiB
+2018-03-20 11:42:34.622342: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: TITAN X (Pascal), pci bus id: 0000:84:00.0, compute capability: 6.1)
+[32m[0320 11:42:35 @base.py:220][0m Initializing the session ...
+[32m[0320 11:42:35 @base.py:227][0m Graph Finalized.
+[32m[0320 11:42:35 @concurrency.py:36][0m Starting EnqueueThread QueueInput/input_queue ...
+[32m[0320 11:42:37 @monitor.py:251][0m Found existing JSON at train_log/cnn_w_4_a_32_quant_ends_False/stat.json, will append to it.
+[32m[0320 11:42:37 @monitor.py:262][0m Found training history from JSON, now starting from epoch number 3.
+[32m[0320 11:42:37 @base.py:247][0m Start Epoch 3 ...
+  0%|          |0/173481[00:00<?,?it/s] 10%|#         |18049/173481[03:00<25:50,100.27it/s] 11%|#         |19026/173481[03:10<25:40,100.27it/s] 12%|#2        |21613/173481[06:05<1:18:26,32.27it/s] 13%|#2        |21690/173481[06:20<1:18:24,32.27it/s] 13%|#2        |22279/173481[09:08<6:24:40, 6.55it/s] 13%|#2        |22314/173481[09:20<6:24:34, 6.55it/s] 13%|#3        |23167/173481[12:12<7:31:54, 5.54it/s] 13%|#3        |23266/173481[12:30<7:31:36, 5.54it/s] 19%|#9        |33097/173481[15:12<3:52:14,10.07it/s] 20%|#9        |34676/173481[15:30<3:49:37,10.07it/s] 29%|##8       |49735/173481[18:12<1:53:30,18.17it/s] 30%|##9       |51462/173481[18:30<1:51:55,18.17it/s] 39%|###8      |67121/173481[21:12<57:57,30.58it/s]   40%|###9      |68924/173481[21:31<56:58,30.58it/s] 49%|####9     |85550/173481[24:12<31:06,47.10it/s] 50%|#####     |87590/173481[24:31<30:23,47.10it/s] 61%|######    |105500/173481[27:12<17:08,66.11it/s] 62%|######2   |107597/173481[27:31<16:36,66.11it/s] 72%|#######2  |125743/173481[30:12<09:33,83.27it/s] 74%|#######3  |127542/173481[30:31<09:11,83.27it/s] 84%|########3 |144999/173481[33:12<05:04,93.64it/s] 85%|########4 |147193/173481[33:31<04:40,93.64it/s] 96%|#########5|165856/173481[36:12<01:13,103.58it/s] 97%|#########6|167508/173481[36:31<00:57,103.58it/s]100%|##########|173481/173481[38:03<00:00,75.99it/s] 
+[32m[0320 12:20:40 @base.py:257][0m Epoch 3 (global_step 173481) finished, time:2283.10 sec.
+[32m[0320 12:20:41 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-173481.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[02:09<00:00,145.85it/s]
+0
+[32m[0320 12:22:50 @monitor.py:363][0m QueueInput/queue_size: 0.81162
+[32m[0320 12:22:50 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 4.2159
+[32m[0320 12:22:50 @monitor.py:363][0m activation-summaries/output-rms: 0.027247
+[32m[0320 12:22:50 @monitor.py:363][0m cross_entropy_loss: 2.7316
+[32m[0320 12:22:50 @monitor.py:363][0m lr: 0.001
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/conv0/W-rms: 0.41038
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/conv0/b-rms: 0.00010465
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.1431
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/last_linear/b-rms: 0.78013
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/linear0/W-rms: 0.15509
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/linear1/W-rms: 0.13673
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/linear2/W-rms: 0.13189
+[32m[0320 12:22:50 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 12:22:50 @monitor.py:363][0m train-error-top1: 0.66542
+[32m[0320 12:22:50 @monitor.py:363][0m val-error-top1: 0.77578
+[32m[0320 12:22:50 @monitor.py:363][0m val-utt-error: 0.49272
+[32m[0320 12:22:50 @monitor.py:363][0m validation_cost: 3.4049
+[32m[0320 12:22:50 @monitor.py:363][0m wd_cost: 0.52045
+[32m[0320 12:22:50 @group.py:42][0m Callbacks took 129.461 sec in total. InferenceRunner: 129.086sec
+[32m[0320 12:22:50 @base.py:247][0m Start Epoch 4 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12256/173481[03:00<39:28,68.08it/s]  7%|7         |12926/173481[03:10<39:18,68.08it/s] 14%|#3        |24016/173481[06:00<37:21,66.68it/s] 14%|#4        |24669/173481[06:10<37:11,66.68it/s] 21%|##        |35573/173481[09:00<35:08,65.42it/s] 21%|##        |36246/173481[09:10<34:57,65.42it/s] 27%|##7       |47357/173481[12:00<32:07,65.44it/s] 28%|##7       |48097/173481[12:10<31:56,65.44it/s] 34%|###4      |59339/173481[15:00<28:49,66.00it/s] 35%|###4      |60062/173481[15:10<28:38,66.00it/s] 41%|####      |71050/173481[18:00<26:03,65.52it/s] 41%|####1     |71758/173481[18:10<25:52,65.52it/s] 47%|####7     |81878/173481[21:00<24:20,62.72it/s] 48%|####7     |82541/173481[21:11<24:09,62.72it/s] 54%|#####3    |93420/173481[24:00<21:02,63.41it/s] 54%|#####4    |94167/173481[24:11<20:50,63.41it/s] 61%|######1   |106315/173481[27:00<16:38,67.28it/s] 62%|######1   |107166/173481[27:11<16:25,67.28it/s] 69%|######8   |119278/173481[30:00<12:59,69.56it/s] 69%|######9   |120135/173481[30:11<12:46,69.56it/s] 76%|#######6  |132401/173481[33:00<09:37,71.19it/s] 77%|#######6  |133245/173481[33:11<09:25,71.19it/s] 84%|########3 |145180/173481[36:00<06:38,71.09it/s] 84%|########4 |146060/173481[36:11<06:25,71.09it/s] 91%|#########1|158144/173481[39:00<03:34,71.55it/s] 92%|#########1|159016/173481[39:11<03:22,71.55it/s] 99%|#########8|171328/173481[42:00<00:29,72.39it/s] 99%|#########9|172208/173481[42:12<00:17,72.39it/s]100%|##########|173481/173481[42:30<00:00,68.01it/s]
+[32m[0320 13:05:21 @base.py:257][0m Epoch 4 (global_step 346962) finished, time:2550.93 sec.
+[32m[0320 13:05:21 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-346962.
+[32m[0320 13:05:21 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[02:15<00:00,139.36it/s]
+1
+[32m[0320 13:07:36 @monitor.py:363][0m QueueInput/queue_size: 0.12742
+[32m[0320 13:07:36 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 4.1769
+[32m[0320 13:07:36 @monitor.py:363][0m activation-summaries/output-rms: 0.028016
+[32m[0320 13:07:36 @monitor.py:363][0m cross_entropy_loss: 2.6305
+[32m[0320 13:07:36 @monitor.py:363][0m lr: 0.001
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/conv0/W-rms: 0.42951
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/conv0/b-rms: 0.00011451
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.14465
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.0356
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/linear0/W-rms: 0.15665
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/linear1/W-rms: 0.13696
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/linear2/W-rms: 0.1328
+[32m[0320 13:07:36 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 13:07:36 @monitor.py:363][0m train-error-top1: 0.65102
+[32m[0320 13:07:36 @monitor.py:363][0m val-error-top1: 0.76107
+[32m[0320 13:07:36 @monitor.py:363][0m val-utt-error: 0.46966
+[32m[0320 13:07:36 @monitor.py:363][0m validation_cost: 3.2926
+[32m[0320 13:07:36 @monitor.py:363][0m wd_cost: 0.52858
+[32m[0320 13:07:36 @group.py:42][0m Callbacks took 135.643 sec in total. InferenceRunner: 135.073sec
+[32m[0320 13:07:36 @base.py:247][0m Start Epoch 5 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12397/173481[03:00<38:59,68.86it/s]  8%|7         |13123/173481[03:10<38:48,68.86it/s] 15%|#4        |25249/173481[06:00<35:15,70.07it/s] 15%|#4        |25967/173481[06:10<35:05,70.07it/s] 22%|##1       |37327/173481[09:00<33:06,68.55it/s] 22%|##1       |38034/173481[09:10<32:55,68.55it/s] 28%|##8       |49289/173481[12:00<30:40,67.48it/s] 29%|##8       |49986/173481[12:10<30:29,67.48it/s] 35%|###5      |61362/173481[15:00<27:46,67.28it/s] 36%|###5      |62040/173481[15:10<27:36,67.28it/s] 42%|####2     |73172/173481[18:00<25:09,66.43it/s] 43%|####2     |73866/173481[18:10<24:59,66.43it/s] 50%|#####     |86897/173481[21:00<20:19,71.00it/s] 51%|#####     |87734/173481[21:11<20:07,71.00it/s] 58%|#####7    |100123/173481[24:00<16:55,72.21it/s] 58%|#####8    |100884/173481[24:11<16:45,72.21it/s] 65%|######4   |112551/173481[27:00<14:23,70.59it/s] 65%|######5   |113324/173481[27:11<14:12,70.59it/s] 72%|#######1  |124109/173481[30:00<12:14,67.25it/s] 72%|#######1  |124855/173481[30:11<12:03,67.25it/s] 78%|#######8  |135829/173481[33:00<09:29,66.15it/s] 79%|#######8  |136560/173481[33:11<09:18,66.15it/s] 86%|########5 |148735/173481[36:00<05:59,68.81it/s] 86%|########6 |149591/173481[36:11<05:47,68.81it/s] 93%|#########3|161514/173481[39:00<02:51,69.88it/s] 94%|#########3|162360/173481[39:12<02:39,69.88it/s]100%|##########|173481/173481[41:39<00:00,69.41it/s]
+[32m[0320 13:49:16 @base.py:257][0m Epoch 5 (global_step 520443) finished, time:2499.52 sec.
+[32m[0320 13:49:16 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-520443.
+[32m[0320 13:49:16 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s] 97%|#########7|18337/18822[03:00<00:04,101.87it/s]100%|##########|18822/18822[03:04<00:00,102.14it/s]
+2
+[32m[0320 13:52:21 @monitor.py:363][0m QueueInput/queue_size: 0.28957
+[32m[0320 13:52:21 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 7.0183
+[32m[0320 13:52:21 @monitor.py:363][0m activation-summaries/output-rms: 0.033621
+[32m[0320 13:52:21 @monitor.py:363][0m cross_entropy_loss: 2.2854
+[32m[0320 13:52:21 @monitor.py:363][0m lr: 0.0005
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/conv0/W-rms: 0.46634
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/conv0/b-rms: 8.0801e-05
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.20144
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.1388
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/linear0/W-rms: 0.21151
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/linear1/W-rms: 0.1883
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/linear2/W-rms: 0.18538
+[32m[0320 13:52:21 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 13:52:21 @monitor.py:363][0m train-error-top1: 0.58504
+[32m[0320 13:52:21 @monitor.py:363][0m val-error-top1: 0.66848
+[32m[0320 13:52:21 @monitor.py:363][0m val-utt-error: 0.31139
+[32m[0320 13:52:21 @monitor.py:363][0m validation_cost: 2.7555
+[32m[0320 13:52:21 @monitor.py:363][0m wd_cost: 0.2001
+[32m[0320 13:52:21 @group.py:42][0m Callbacks took 184.632 sec in total. InferenceRunner: 184.296sec
+[32m[0320 13:52:21 @base.py:247][0m Start Epoch 6 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|7         |13852/173481[03:00<34:34,76.93it/s]  8%|8         |14602/173481[03:10<34:25,76.93it/s] 15%|#5        |26776/173481[06:00<32:55,74.28it/s] 16%|#5        |27499/173481[06:10<32:45,74.28it/s] 23%|##3       |39964/173481[09:00<30:10,73.76it/s] 23%|##3       |40694/173481[09:10<30:00,73.76it/s] 31%|###       |53308/173481[12:00<27:05,73.94it/s] 31%|###1      |54105/173481[12:10<26:54,73.94it/s] 38%|###7      |65492/173481[15:00<25:27,70.68it/s] 38%|###8      |66315/173481[15:10<25:16,70.68it/s] 46%|####5     |79239/173481[18:00<21:23,73.41it/s] 46%|####6     |80060/173481[18:10<21:12,73.41it/s] 53%|#####3    |92620/173481[21:00<18:14,73.87it/s] 54%|#####3    |93393/173481[21:11<18:04,73.87it/s] 61%|######    |105499/173481[24:00<15:35,72.69it/s] 61%|######1   |106311/173481[24:11<15:24,72.69it/s] 68%|######7   |117778/173481[27:00<13:11,70.38it/s] 68%|######8   |118569/173481[27:11<13:00,70.38it/s] 75%|#######5  |130563/173481[30:00<10:07,70.70it/s] 76%|#######5  |131427/173481[30:11<09:54,70.70it/s] 83%|########2 |143794/173481[33:00<06:51,72.07it/s] 83%|########3 |144645/173481[33:11<06:40,72.07it/s] 91%|######### |157653/173481[36:00<03:32,74.45it/s] 91%|#########1|158576/173481[36:11<03:20,74.45it/s] 99%|#########8|171166/173481[39:00<00:30,74.75it/s] 99%|#########9|171963/173481[39:11<00:20,74.75it/s]100%|##########|173481/173481[39:33<00:00,73.11it/s]
+[32m[0320 14:31:54 @base.py:257][0m Epoch 6 (global_step 693924) finished, time:2373.04 sec.
+[32m[0320 14:31:54 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-693924.
+[32m[0320 14:31:54 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[02:19<00:00,135.26it/s]
+3
+[32m[0320 14:34:14 @monitor.py:363][0m QueueInput/queue_size: 0.51912
+[32m[0320 14:34:14 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 8.6359
+[32m[0320 14:34:14 @monitor.py:363][0m activation-summaries/output-rms: 0.032498
+[32m[0320 14:34:14 @monitor.py:363][0m cross_entropy_loss: 2.275
+[32m[0320 14:34:14 @monitor.py:363][0m lr: 0.0005
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/conv0/W-rms: 0.56706
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/conv0/b-rms: 0.00010475
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.23494
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.2136
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/linear0/W-rms: 0.24043
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/linear1/W-rms: 0.21386
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/linear2/W-rms: 0.20643
+[32m[0320 14:34:14 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 14:34:14 @monitor.py:363][0m train-error-top1: 0.58372
+[32m[0320 14:34:14 @monitor.py:363][0m val-error-top1: 0.64757
+[32m[0320 14:34:14 @monitor.py:363][0m val-utt-error: 0.2929
+[32m[0320 14:34:14 @monitor.py:363][0m validation_cost: 2.6531
+[32m[0320 14:34:14 @monitor.py:363][0m wd_cost: 0.25986
+[32m[0320 14:34:14 @group.py:42][0m Callbacks took 140.014 sec in total. InferenceRunner: 139.163sec
+[32m[0320 14:34:14 @base.py:247][0m Start Epoch 7 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12667/173481[03:00<38:05,70.36it/s]  8%|7         |13345/173481[03:10<37:56,70.36it/s] 14%|#4        |24849/173481[06:00<35:54,68.99it/s] 15%|#4        |25554/173481[06:10<35:44,68.99it/s] 21%|##1       |37165/173481[09:00<33:05,68.66it/s] 22%|##1       |37862/173481[09:10<32:55,68.66it/s] 29%|##9       |50629/173481[12:00<28:35,71.60it/s] 30%|##9       |51406/173481[12:10<28:25,71.60it/s] 36%|###5      |62410/173481[15:00<27:04,68.38it/s] 36%|###6      |63084/173481[15:10<26:54,68.38it/s] 43%|####2     |74359/173481[18:00<24:31,67.37it/s] 43%|####3     |75120/173481[18:10<24:20,67.37it/s] 51%|#####     |87623/173481[21:00<20:19,70.38it/s] 51%|#####     |88415/173481[21:11<20:08,70.38it/s] 58%|#####8    |100936/173481[24:00<16:45,72.13it/s] 59%|#####8    |101718/173481[24:11<16:34,72.13it/s] 66%|######5   |114265/173481[27:00<13:30,73.07it/s] 66%|######6   |115050/173481[27:11<13:19,73.07it/s] 73%|#######3  |127452/173481[30:00<10:29,73.17it/s] 74%|#######3  |128273/173481[30:11<10:17,73.17it/s] 81%|########  |140000/173481[33:00<07:48,71.40it/s] 81%|########1 |140796/173481[33:11<07:37,71.40it/s] 88%|########7 |152407/173481[36:00<05:00,70.14it/s] 88%|########8 |153229/173481[36:11<04:48,70.14it/s] 95%|#########4|164384/173481[39:00<02:13,68.29it/s] 95%|#########5|165135/173481[39:11<02:02,68.29it/s]100%|##########|173481/173481[41:10<00:00,70.23it/s]
+[32m[0320 15:15:24 @base.py:257][0m Epoch 7 (global_step 867405) finished, time:2470.15 sec.
+[32m[0320 15:15:24 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-867405.
+[32m[0320 15:15:24 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[02:03<00:00,151.86it/s]
+4
+[32m[0320 15:17:28 @monitor.py:363][0m QueueInput/queue_size: 0.40355
+[32m[0320 15:17:28 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 8.6106
+[32m[0320 15:17:28 @monitor.py:363][0m activation-summaries/output-rms: 0.034524
+[32m[0320 15:17:28 @monitor.py:363][0m cross_entropy_loss: 2.171
+[32m[0320 15:17:28 @monitor.py:363][0m lr: 0.0005
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/conv0/W-rms: 0.6048
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/conv0/b-rms: 0.00010445
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.23788
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.2678
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/linear0/W-rms: 0.24194
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/linear1/W-rms: 0.21582
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/linear2/W-rms: 0.20794
+[32m[0320 15:17:28 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 15:17:28 @monitor.py:363][0m train-error-top1: 0.56234
+[32m[0320 15:17:28 @monitor.py:363][0m val-error-top1: 0.63273
+[32m[0320 15:17:28 @monitor.py:363][0m val-utt-error: 0.27186
+[32m[0320 15:17:28 @monitor.py:363][0m validation_cost: 2.5693
+[32m[0320 15:17:28 @monitor.py:363][0m wd_cost: 0.26463
+[32m[0320 15:17:28 @group.py:42][0m Callbacks took 124.507 sec in total. InferenceRunner: 123.956sec
+[32m[0320 15:17:28 @base.py:247][0m Start Epoch 8 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|7         |13846/173481[03:00<34:35,76.92it/s]  8%|8         |14601/173481[03:10<34:25,76.92it/s] 15%|#5        |26398/173481[06:00<33:31,73.14it/s] 16%|#5        |27177/173481[06:10<33:20,73.14it/s] 23%|##2       |39706/173481[09:00<30:19,73.53it/s] 23%|##3       |40485/173481[09:10<30:08,73.53it/s] 30%|###       |52753/173481[12:00<27:33,73.00it/s] 31%|###       |53494/173481[12:10<27:23,73.00it/s] 38%|###7      |65626/173481[15:00<24:52,72.24it/s] 38%|###8      |66381/173481[15:10<24:42,72.24it/s] 45%|####5     |78887/173481[18:00<21:36,72.95it/s] 46%|####5     |79676/173481[18:10<21:25,72.95it/s] 53%|#####3    |92008/173481[21:00<18:37,72.92it/s] 53%|#####3    |92799/173481[21:11<18:26,72.92it/s] 60%|######    |104836/173481[24:00<15:52,72.08it/s] 61%|######    |105649/173481[24:11<15:41,72.08it/s] 68%|######8   |118075/173481[27:00<12:40,72.81it/s] 69%|######8   |118917/173481[27:11<12:29,72.81it/s] 76%|#######5  |131032/173481[30:00<09:46,72.39it/s] 76%|#######5  |131823/173481[30:11<09:35,72.39it/s] 83%|########3 |144022/173481[33:00<06:47,72.27it/s] 84%|########3 |144871/173481[33:11<06:35,72.27it/s] 91%|######### |157226/173481[36:00<03:43,72.81it/s] 91%|#########1|158072/173481[36:11<03:31,72.81it/s] 98%|#########8|170035/173481[39:00<00:47,71.97it/s] 98%|#########8|170846/173481[39:12<00:36,71.97it/s]100%|##########|173481/173481[39:48<00:00,72.62it/s]
+[32m[0320 15:57:17 @base.py:257][0m Epoch 8 (global_step 1040886) finished, time:2388.91 sec.
+[32m[0320 15:57:18 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-1040886.
+[32m[0320 15:57:18 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[02:15<00:00,138.84it/s]
+5
+[32m[0320 15:59:33 @monitor.py:363][0m QueueInput/queue_size: 0.1949
+[32m[0320 15:59:33 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 12.929
+[32m[0320 15:59:33 @monitor.py:363][0m activation-summaries/output-rms: 0.036829
+[32m[0320 15:59:33 @monitor.py:363][0m cross_entropy_loss: 2.0277
+[32m[0320 15:59:33 @monitor.py:363][0m lr: 0.00025
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/conv0/W-rms: 0.62831
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/conv0/b-rms: 9.3741e-05
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.28821
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.304
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/linear0/W-rms: 0.27859
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/linear1/W-rms: 0.24585
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/linear2/W-rms: 0.23831
+[32m[0320 15:59:33 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 15:59:33 @monitor.py:363][0m train-error-top1: 0.52432
+[32m[0320 15:59:33 @monitor.py:363][0m val-error-top1: 0.5889
+[32m[0320 15:59:33 @monitor.py:363][0m val-utt-error: 0.2207
+[32m[0320 15:59:33 @monitor.py:363][0m validation_cost: 2.3459
+[32m[0320 15:59:33 @monitor.py:363][0m wd_cost: 0.071728
+[32m[0320 15:59:33 @group.py:42][0m Callbacks took 136.311 sec in total. InferenceRunner: 135.584sec
+[32m[0320 15:59:33 @base.py:247][0m Start Epoch 9 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12898/173481[03:00<37:21,71.65it/s]  8%|7         |13826/173481[03:10<37:08,71.65it/s] 17%|#7        |30343/173481[06:00<28:57,82.39it/s] 18%|#8        |31394/173481[06:10<28:44,82.39it/s] 26%|##5       |44467/173481[09:00<26:45,80.36it/s] 26%|##6       |45210/173481[09:10<26:36,80.36it/s] 33%|###2      |56701/173481[12:00<26:25,73.64it/s] 33%|###3      |57426/173481[12:10<26:15,73.64it/s] 40%|###9      |68791/173481[15:00<24:50,70.25it/s] 40%|####      |69545/173481[15:10<24:39,70.25it/s] 47%|####6     |81247/173481[18:00<22:03,69.71it/s] 47%|####7     |81968/173481[18:10<21:52,69.71it/s] 54%|#####3    |93121/173481[21:00<19:45,67.78it/s] 54%|#####4    |93852/173481[21:11<19:34,67.78it/s] 60%|######    |104908/173481[24:00<17:09,66.61it/s] 61%|######    |105642/173481[24:11<16:58,66.61it/s] 67%|######7   |117055/173481[27:00<14:01,67.04it/s] 68%|######7   |117834/173481[27:11<13:50,67.04it/s] 74%|#######4  |129104/173481[30:00<11:02,66.99it/s] 75%|#######4  |129863/173481[30:11<10:51,66.99it/s] 82%|########1 |141445/173481[33:00<07:52,67.76it/s] 82%|########1 |142218/173481[33:11<07:41,67.76it/s] 89%|########8 |154057/173481[36:00<04:41,68.89it/s] 89%|########9 |154842/173481[36:11<04:30,68.89it/s] 96%|#########5|166393/173481[39:00<01:43,68.71it/s] 96%|#########6|167249/173481[39:12<01:30,68.71it/s]100%|##########|173481/173481[40:39<00:00,71.12it/s]
+[32m[0320 16:40:13 @base.py:257][0m Epoch 9 (global_step 1214367) finished, time:2439.39 sec.
+[32m[0320 16:40:13 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-1214367.
+[32m[0320 16:40:14 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:55<00:00,163.35it/s]
+6
+[32m[0320 16:42:09 @monitor.py:363][0m QueueInput/queue_size: 0.40199
+[32m[0320 16:42:09 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 17.616
+[32m[0320 16:42:09 @monitor.py:363][0m activation-summaries/output-rms: 0.036912
+[32m[0320 16:42:09 @monitor.py:363][0m cross_entropy_loss: 1.9965
+[32m[0320 16:42:09 @monitor.py:363][0m lr: 0.00025
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/conv0/W-rms: 0.66079
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/conv0/b-rms: 0.00010302
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.35795
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3227
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/linear0/W-rms: 0.32936
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/linear1/W-rms: 0.28902
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/linear2/W-rms: 0.28105
+[32m[0320 16:42:09 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 16:42:09 @monitor.py:363][0m train-error-top1: 0.5209
+[32m[0320 16:42:09 @monitor.py:363][0m val-error-top1: 0.57265
+[32m[0320 16:42:09 @monitor.py:363][0m val-utt-error: 0.19334
+[32m[0320 16:42:09 @monitor.py:363][0m validation_cost: 2.2594
+[32m[0320 16:42:09 @monitor.py:363][0m wd_cost: 0.10298
+[32m[0320 16:42:09 @group.py:42][0m Callbacks took 116.167 sec in total. InferenceRunner: 115.239sec
+[32m[0320 16:42:09 @base.py:247][0m Start Epoch 10 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|7         |13270/173481[03:00<36:13,73.72it/s]  8%|8         |14021/173481[03:10<36:03,73.72it/s] 15%|#4        |25192/173481[06:00<35:25,69.77it/s] 15%|#5        |26325/173481[06:10<35:09,69.77it/s] 23%|##2       |39522/173481[09:00<30:01,74.37it/s] 23%|##3       |40362/173481[09:10<29:50,74.37it/s] 32%|###2      |56368/173481[12:00<23:33,82.88it/s] 33%|###3      |57522/173481[12:10<23:19,82.88it/s] 44%|####3     |75489/173481[15:00<17:32,93.11it/s] 44%|####4     |76596/173481[15:10<17:20,93.11it/s] 54%|#####4    |94356/173481[18:00<13:22,98.62it/s] 55%|#####5    |95494/173481[18:10<13:10,98.62it/s] 65%|######4   |111970/173481[21:00<10:26,98.22it/s] 65%|######4   |112720/173481[21:11<10:18,98.22it/s] 72%|#######1  |124472/173481[24:00<10:02,81.37it/s] 72%|#######2  |125212/173481[24:11<09:53,81.37it/s] 78%|#######8  |135976/173481[27:00<08:43,71.59it/s] 79%|#######8  |136731/173481[27:11<08:33,71.59it/s] 85%|########4 |147353/173481[30:00<06:29,67.14it/s] 85%|########5 |148095/173481[30:11<06:18,67.14it/s] 92%|#########1|158819/173481[33:00<03:44,65.37it/s] 92%|#########1|159581/173481[33:11<03:32,65.37it/s] 98%|#########8|170567/173481[36:00<00:44,65.32it/s] 99%|#########8|171297/173481[36:11<00:33,65.32it/s]100%|##########|173481/173481[36:46<00:00,78.61it/s]
+[32m[0320 17:18:56 @base.py:257][0m Epoch 10 (global_step 1387848) finished, time:2207.02 sec.
+[32m[0320 17:18:57 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-1387848.
+[32m[0320 17:18:57 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:52<00:00,167.84it/s]
+7
+[32m[0320 17:20:49 @monitor.py:363][0m QueueInput/queue_size: 0.19876
+[32m[0320 17:20:49 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 20.777
+[32m[0320 17:20:49 @monitor.py:363][0m activation-summaries/output-rms: 0.036629
+[32m[0320 17:20:49 @monitor.py:363][0m cross_entropy_loss: 1.9431
+[32m[0320 17:20:49 @monitor.py:363][0m lr: 0.00025
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/conv0/W-rms: 0.68811
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/conv0/b-rms: 9.4879e-05
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.40236
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3448
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/linear0/W-rms: 0.34937
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/linear1/W-rms: 0.30719
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/linear2/W-rms: 0.29811
+[32m[0320 17:20:49 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 17:20:49 @monitor.py:363][0m train-error-top1: 0.50627
+[32m[0320 17:20:49 @monitor.py:363][0m val-error-top1: 0.57774
+[32m[0320 17:20:49 @monitor.py:363][0m val-utt-error: 0.20327
+[32m[0320 17:20:49 @monitor.py:363][0m validation_cost: 2.2771
+[32m[0320 17:20:49 @monitor.py:363][0m wd_cost: 0.12059
+[32m[0320 17:20:49 @group.py:42][0m Callbacks took 112.952 sec in total. InferenceRunner: 112.157sec
+[32m[0320 17:20:49 @base.py:247][0m Start Epoch 11 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12763/173481[03:00<37:47,70.89it/s]  8%|7         |13402/173481[03:10<37:38,70.89it/s] 14%|#3        |23476/173481[06:00<38:38,64.71it/s] 14%|#3        |24066/173481[06:10<38:29,64.71it/s] 20%|#9        |34125/173481[09:00<37:34,61.81it/s] 20%|##        |34710/173481[09:10<37:25,61.81it/s] 25%|##5       |44144/173481[12:00<36:48,58.57it/s] 26%|##5       |44826/173481[12:10<36:36,58.57it/s] 32%|###1      |55501/173481[15:00<32:22,60.74it/s] 32%|###2      |56118/173481[15:10<32:12,60.74it/s] 38%|###8      |66625/173481[18:00<29:04,61.26it/s] 39%|###8      |67296/173481[18:10<28:53,61.26it/s] 45%|####4     |77469/173481[21:00<26:20,60.75it/s] 45%|####5     |78188/173481[21:11<26:08,60.75it/s] 51%|#####1    |89251/173481[24:00<22:16,63.00it/s] 52%|#####1    |89976/173481[24:11<22:05,63.00it/s] 58%|#####7    |99997/173481[27:00<19:58,61.30it/s] 58%|#####8    |100798/173481[27:11<19:45,61.30it/s] 63%|######3   |110100/173481[30:00<18:01,58.60it/s] 64%|######3   |110697/173481[30:11<17:51,58.60it/s] 69%|######9   |120317/173481[33:00<15:21,57.67it/s] 70%|######9   |120920/173481[33:11<15:11,57.67it/s] 75%|#######5  |130189/173481[36:00<12:50,56.20it/s] 75%|#######5  |130850/173481[36:11<12:38,56.20it/s] 81%|########1 |140611/173481[39:00<09:36,57.03it/s] 81%|########1 |141306/173481[39:12<09:24,57.03it/s] 87%|########7 |151787/173481[42:00<06:04,59.45it/s] 88%|########7 |152635/173481[42:12<05:50,59.45it/s] 94%|#########4|163589/173481[45:00<02:38,62.36it/s] 95%|#########4|164367/173481[45:12<02:26,62.36it/s]100%|##########|173481/173481[47:37<00:00,60.71it/s]
+[32m[0320 18:08:27 @base.py:257][0m Epoch 11 (global_step 1561329) finished, time:2857.61 sec.
+[32m[0320 18:08:27 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-1561329.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[02:03<00:00,152.71it/s]
+8
+[32m[0320 18:10:30 @monitor.py:363][0m QueueInput/queue_size: 0.27573
+[32m[0320 18:10:30 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 25.187
+[32m[0320 18:10:30 @monitor.py:363][0m activation-summaries/output-rms: 0.037536
+[32m[0320 18:10:30 @monitor.py:363][0m cross_entropy_loss: 1.9193
+[32m[0320 18:10:30 @monitor.py:363][0m lr: 0.000125
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/conv0/W-rms: 0.69897
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/conv0/b-rms: 9.5552e-05
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.44952
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.357
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/linear0/W-rms: 0.37354
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/linear1/W-rms: 0.32354
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/linear2/W-rms: 0.31363
+[32m[0320 18:10:30 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 18:10:30 @monitor.py:363][0m train-error-top1: 0.50274
+[32m[0320 18:10:30 @monitor.py:363][0m val-error-top1: 0.56249
+[32m[0320 18:10:30 @monitor.py:363][0m val-utt-error: 0.18717
+[32m[0320 18:10:30 @monitor.py:363][0m validation_cost: 2.2078
+[32m[0320 18:10:30 @monitor.py:363][0m wd_cost: 0.028115
+[32m[0320 18:10:30 @group.py:42][0m Callbacks took 123.579 sec in total. InferenceRunner: 123.265sec
+[32m[0320 18:10:30 @base.py:247][0m Start Epoch 12 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|7         |13119/173481[03:00<36:40,72.87it/s]  8%|7         |13724/173481[03:10<36:32,72.87it/s] 14%|#3        |24028/173481[06:00<37:38,66.16it/s] 14%|#4        |24615/173481[06:10<37:30,66.16it/s] 21%|##        |35644/173481[09:00<35:09,65.33it/s] 21%|##        |36303/173481[09:10<34:59,65.33it/s] 27%|##7       |47116/173481[12:00<32:38,64.51it/s] 28%|##7       |47775/173481[12:10<32:28,64.51it/s] 34%|###3      |58732/173481[15:00<29:38,64.52it/s] 34%|###4      |59421/173481[15:10<29:27,64.52it/s] 41%|####      |71073/173481[18:00<25:40,66.48it/s] 41%|####1     |71807/173481[18:10<25:29,66.48it/s] 49%|####8     |84208/173481[21:00<21:23,69.57it/s] 49%|####8     |85005/173481[21:11<21:11,69.57it/s] 56%|#####5    |96844/173481[24:00<18:16,69.88it/s] 56%|#####6    |97627/173481[24:11<18:05,69.88it/s] 63%|######2   |108887/173481[27:00<15:44,68.36it/s] 63%|######3   |109671/173481[27:11<15:33,68.36it/s] 70%|######9   |120647/173481[30:00<13:10,66.81it/s] 70%|######9   |121407/173481[30:11<12:59,66.81it/s] 76%|#######5  |131294/173481[33:00<11:12,62.75it/s] 76%|#######6  |131944/173481[33:11<11:01,62.75it/s] 82%|########1 |142115/173481[36:00<08:30,61.40it/s] 82%|########2 |142855/173481[36:11<08:18,61.40it/s] 89%|########8 |153742/173481[39:00<05:13,62.95it/s] 89%|########9 |154563/173481[39:11<05:00,62.95it/s] 96%|#########5|165898/173481[42:00<01:56,65.16it/s] 96%|#########6|166669/173481[42:12<01:44,65.16it/s]100%|##########|173481/173481[44:12<00:00,65.41it/s]
+[32m[0320 18:54:43 @base.py:257][0m Epoch 12 (global_step 1734810) finished, time:2652.29 sec.
+[32m[0320 18:54:43 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-1734810.
+[32m[0320 18:54:43 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:52<00:00,167.73it/s]
+9
+[32m[0320 18:56:35 @monitor.py:363][0m QueueInput/queue_size: 0.37785
+[32m[0320 18:56:35 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 28.393
+[32m[0320 18:56:35 @monitor.py:363][0m activation-summaries/output-rms: 0.035883
+[32m[0320 18:56:35 @monitor.py:363][0m cross_entropy_loss: 2.0055
+[32m[0320 18:56:35 @monitor.py:363][0m lr: 0.000125
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/conv0/W-rms: 0.70876
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/conv0/b-rms: 9.437e-05
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.50153
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3648
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/linear0/W-rms: 0.40426
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/linear1/W-rms: 0.34546
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/linear2/W-rms: 0.3354
+[32m[0320 18:56:35 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 18:56:35 @monitor.py:363][0m train-error-top1: 0.52149
+[32m[0320 18:56:35 @monitor.py:363][0m val-error-top1: 0.56181
+[32m[0320 18:56:35 @monitor.py:363][0m val-utt-error: 0.19249
+[32m[0320 18:56:35 @monitor.py:363][0m validation_cost: 2.211
+[32m[0320 18:56:35 @monitor.py:363][0m wd_cost: 0.033383
+[32m[0320 18:56:35 @group.py:42][0m Callbacks took 112.746 sec in total. InferenceRunner: 112.236sec
+[32m[0320 18:56:35 @base.py:247][0m Start Epoch 13 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12360/173481[03:00<39:06,68.67it/s]  7%|7         |12954/173481[03:10<38:57,68.67it/s] 14%|#3        |23822/173481[06:00<37:44,66.08it/s] 14%|#4        |24480/173481[06:10<37:34,66.08it/s] 20%|##        |35425/173481[09:00<35:15,65.25it/s] 21%|##        |36084/173481[09:10<35:05,65.25it/s] 27%|##7       |47045/173481[12:00<32:28,64.90it/s] 28%|##7       |47762/173481[12:10<32:17,64.90it/s] 34%|###3      |58837/173481[15:00<29:18,65.19it/s] 34%|###4      |59539/173481[15:10<29:07,65.19it/s] 41%|####      |70825/173481[18:00<25:58,65.88it/s] 41%|####1     |71594/173481[18:10<25:46,65.88it/s] 48%|####7     |82688/173481[21:00<22:57,65.89it/s] 48%|####8     |83401/173481[21:11<22:47,65.89it/s] 55%|#####4    |94550/173481[24:00<19:57,65.90it/s] 55%|#####4    |95338/173481[24:11<19:45,65.90it/s] 61%|######1   |106519/173481[27:00<16:51,66.19it/s] 62%|######1   |107235/173481[27:11<16:40,66.19it/s] 68%|######8   |118141/173481[30:00<14:06,65.37it/s] 68%|######8   |118826/173481[30:11<13:56,65.37it/s] 75%|#######4  |129919/173481[33:00<11:06,65.39it/s] 75%|#######5  |130536/173481[33:11<10:56,65.39it/s] 81%|########  |140407/173481[36:00<08:56,61.62it/s] 81%|########1 |141156/173481[36:11<08:44,61.62it/s] 87%|########7 |151273/173481[39:00<06:04,60.99it/s] 88%|########7 |151944/173481[39:12<05:53,60.99it/s] 94%|#########3|162485/173481[42:00<02:58,61.63it/s] 94%|#########4|163251/173481[42:12<02:45,61.63it/s]100%|##########|173481/173481[44:52<00:00,64.42it/s]
+[32m[0320 19:41:28 @base.py:257][0m Epoch 13 (global_step 1908291) finished, time:2692.92 sec.
+[32m[0320 19:41:29 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-1908291.
+[32m[0320 19:41:29 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:48<00:00,172.82it/s]
+10
+[32m[0320 19:43:18 @monitor.py:363][0m QueueInput/queue_size: 0.2386
+[32m[0320 19:43:18 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 31.682
+[32m[0320 19:43:18 @monitor.py:363][0m activation-summaries/output-rms: 0.038264
+[32m[0320 19:43:18 @monitor.py:363][0m cross_entropy_loss: 1.9087
+[32m[0320 19:43:18 @monitor.py:363][0m lr: 6.25e-05
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/conv0/W-rms: 0.71772
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/conv0/b-rms: 9.0523e-05
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.54806
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3713
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/linear0/W-rms: 0.42808
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/linear1/W-rms: 0.36311
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/linear2/W-rms: 0.35272
+[32m[0320 19:43:18 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 19:43:18 @monitor.py:363][0m train-error-top1: 0.50534
+[32m[0320 19:43:18 @monitor.py:363][0m val-error-top1: 0.55313
+[32m[0320 19:43:18 @monitor.py:363][0m val-utt-error: 0.18579
+[32m[0320 19:43:18 @monitor.py:363][0m validation_cost: 2.1768
+[32m[0320 19:43:18 @monitor.py:363][0m wd_cost: 0.038191
+[32m[0320 19:43:18 @group.py:42][0m Callbacks took 109.838 sec in total. InferenceRunner: 108.920sec
+[32m[0320 19:43:18 @base.py:247][0m Start Epoch 14 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12358/173481[03:00<39:06,68.65it/s]  8%|7         |13049/173481[03:10<38:56,68.65it/s] 14%|#4        |24484/173481[06:00<36:31,68.00it/s] 15%|#4        |25183/173481[06:10<36:20,68.00it/s] 21%|##1       |36664/173481[09:00<33:37,67.82it/s] 22%|##1       |37337/173481[09:10<33:27,67.82it/s] 28%|##7       |48460/173481[12:00<31:15,66.65it/s] 28%|##8       |49149/173481[12:10<31:05,66.65it/s] 35%|###4      |59962/173481[15:00<29:00,65.23it/s] 35%|###5      |60723/173481[15:10<28:48,65.23it/s] 41%|####1     |71933/173481[18:00<25:41,65.86it/s] 42%|####1     |72657/173481[18:10<25:30,65.86it/s] 48%|####8     |83712/173481[21:00<22:47,65.65it/s] 49%|####8     |84357/173481[21:11<22:37,65.65it/s] 55%|#####5    |95505/173481[24:00<19:49,65.58it/s] 55%|#####5    |96219/173481[24:11<19:38,65.58it/s] 62%|######1   |107352/173481[27:00<16:46,65.70it/s] 62%|######2   |108105/173481[27:11<16:35,65.70it/s] 69%|######8   |118963/173481[30:00<13:57,65.10it/s] 69%|######9   |119725/173481[30:11<13:45,65.10it/s] 75%|#######5  |130852/173481[33:00<10:50,65.57it/s] 76%|#######5  |131618/173481[33:11<10:38,65.57it/s] 82%|########2 |142687/173481[36:00<07:49,65.66it/s] 83%|########2 |143478/173481[36:11<07:36,65.66it/s] 89%|########9 |154626/173481[39:00<04:45,65.99it/s] 90%|########9 |155397/173481[39:11<04:34,65.99it/s] 96%|#########5|166280/173481[42:00<01:50,65.36it/s] 96%|#########6|167067/173481[42:12<01:38,65.36it/s]100%|##########|173481/173481[43:54<00:00,65.85it/s]
+[32m[0320 20:27:12 @base.py:257][0m Epoch 14 (global_step 2081772) finished, time:2634.40 sec.
+[32m[0320 20:27:13 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-2081772.
+[32m[0320 20:27:13 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:47<00:00,175.25it/s]
+11
+[32m[0320 20:29:00 @monitor.py:363][0m QueueInput/queue_size: 0.35098
+[32m[0320 20:29:00 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 34.575
+[32m[0320 20:29:00 @monitor.py:363][0m activation-summaries/output-rms: 0.038238
+[32m[0320 20:29:00 @monitor.py:363][0m cross_entropy_loss: 1.8986
+[32m[0320 20:29:00 @monitor.py:363][0m lr: 6.25e-05
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72025
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/conv0/b-rms: 9.0401e-05
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.57902
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3754
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/linear0/W-rms: 0.44411
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/linear1/W-rms: 0.37294
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/linear2/W-rms: 0.36212
+[32m[0320 20:29:00 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 20:29:00 @monitor.py:363][0m train-error-top1: 0.49041
+[32m[0320 20:29:00 @monitor.py:363][0m val-error-top1: 0.54482
+[32m[0320 20:29:00 @monitor.py:363][0m val-utt-error: 0.17533
+[32m[0320 20:29:00 @monitor.py:363][0m validation_cost: 2.1255
+[32m[0320 20:29:00 @monitor.py:363][0m wd_cost: 0.0082864
+[32m[0320 20:29:00 @group.py:42][0m Callbacks took 108.049 sec in total. InferenceRunner: 107.413sec
+[32m[0320 20:29:00 @base.py:247][0m Start Epoch 15 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|8         |14444/173481[03:00<33:01,80.24it/s]  9%|8         |15470/173481[03:10<32:49,80.24it/s] 19%|#8        |32293/173481[06:00<26:31,88.70it/s] 19%|#9        |33060/173481[06:10<26:23,88.70it/s] 26%|##6       |45187/173481[09:00<26:59,79.24it/s] 26%|##6       |45924/173481[09:10<26:49,79.24it/s] 33%|###3      |57927/173481[12:00<25:45,74.77it/s] 34%|###3      |58694/173481[12:10<25:35,74.77it/s] 41%|####      |70711/173481[15:00<23:30,72.84it/s] 41%|####1     |71520/173481[15:10<23:19,72.84it/s] 49%|####8     |84193/173481[18:00<20:09,73.84it/s] 49%|####8     |84965/173481[18:10<19:58,73.84it/s] 56%|#####5    |97001/173481[21:00<17:35,72.47it/s] 56%|#####6    |97771/173481[21:11<17:24,72.47it/s] 63%|######3   |109481/173481[24:00<15:03,70.87it/s] 64%|######3   |110250/173481[24:11<14:52,70.87it/s] 70%|#######   |122221/173481[27:00<12:03,70.82it/s] 71%|#######   |123030/173481[27:11<11:52,70.82it/s] 78%|#######7  |134777/173481[30:00<09:10,70.28it/s] 78%|#######8  |135558/173481[30:11<08:59,70.28it/s] 85%|########5 |147607/173481[33:00<06:05,70.77it/s] 86%|########5 |148426/173481[33:11<05:54,70.77it/s] 93%|#########2|160603/173481[36:00<03:00,71.48it/s] 93%|#########3|161431/173481[36:11<02:48,71.48it/s]100%|##########|173481/173481[38:54<00:00,74.30it/s]
+[32m[0320 21:07:55 @base.py:257][0m Epoch 15 (global_step 2255253) finished, time:2334.94 sec.
+[32m[0320 21:07:56 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-2255253.
+[32m[0320 21:07:56 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:48<00:00,174.07it/s]
+12
+[32m[0320 21:09:44 @monitor.py:363][0m QueueInput/queue_size: 0.55036
+[32m[0320 21:09:44 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 36.404
+[32m[0320 21:09:44 @monitor.py:363][0m activation-summaries/output-rms: 0.038051
+[32m[0320 21:09:44 @monitor.py:363][0m cross_entropy_loss: 1.9129
+[32m[0320 21:09:44 @monitor.py:363][0m lr: 6.25e-05
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72293
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/conv0/b-rms: 8.8608e-05
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.60991
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3786
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/linear0/W-rms: 0.46058
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/linear1/W-rms: 0.3834
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/linear2/W-rms: 0.37214
+[32m[0320 21:09:44 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 21:09:44 @monitor.py:363][0m train-error-top1: 0.49677
+[32m[0320 21:09:44 @monitor.py:363][0m val-error-top1: 0.55208
+[32m[0320 21:09:44 @monitor.py:363][0m val-utt-error: 0.18484
+[32m[0320 21:09:44 @monitor.py:363][0m validation_cost: 2.1743
+[32m[0320 21:09:44 @monitor.py:363][0m wd_cost: 0.0089768
+[32m[0320 21:09:44 @group.py:42][0m Callbacks took 108.639 sec in total. InferenceRunner: 108.152sec
+[32m[0320 21:09:44 @base.py:247][0m Start Epoch 16 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|7         |13510/173481[03:00<35:31,75.04it/s]  8%|8         |14217/173481[03:10<35:22,75.04it/s] 15%|#5        |26116/173481[06:00<33:54,72.45it/s] 15%|#5        |26865/173481[06:10<33:43,72.45it/s] 23%|##2       |39281/173481[09:00<30:43,72.79it/s] 23%|##3       |39975/173481[09:10<30:34,72.79it/s] 30%|##9       |51443/173481[12:00<29:01,70.08it/s] 30%|###       |52222/173481[12:10<28:50,70.08it/s] 37%|###7      |64493/173481[15:00<25:29,71.27it/s] 38%|###7      |65187/173481[15:10<25:19,71.27it/s] 44%|####4     |76561/173481[18:00<23:22,69.09it/s] 45%|####4     |77276/173481[18:10<23:12,69.09it/s] 51%|#####     |88064/173481[21:00<21:26,66.40it/s] 51%|#####1    |88756/173481[21:11<21:16,66.40it/s] 58%|#####7    |100127/173481[24:00<18:19,66.70it/s] 58%|#####8    |100941/173481[24:11<18:07,66.70it/s] 65%|######5   |112793/173481[27:00<14:46,68.48it/s] 65%|######5   |113508/173481[27:11<14:35,68.48it/s] 72%|#######2  |125332/173481[30:00<11:37,69.06it/s] 73%|#######2  |126153/173481[30:11<11:25,69.06it/s] 79%|#######9  |137799/173481[33:00<08:35,69.16it/s] 80%|#######9  |138578/173481[33:11<08:24,69.16it/s] 87%|########6 |150311/173481[36:00<05:34,69.33it/s] 87%|########7 |151096/173481[36:11<05:22,69.33it/s] 94%|#########3|162784/173481[39:00<02:34,69.31it/s] 94%|#########4|163620/173481[39:11<02:22,69.31it/s]100%|##########|173481/173481[41:38<00:00,69.44it/s]
+[32m[0320 21:51:22 @base.py:257][0m Epoch 16 (global_step 2428734) finished, time:2498.26 sec.
+[32m[0320 21:51:23 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-2428734.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:43<00:00,181.14it/s]
+13
+[32m[0320 21:53:07 @monitor.py:363][0m QueueInput/queue_size: 0.12903
+[32m[0320 21:53:07 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 38.738
+[32m[0320 21:53:07 @monitor.py:363][0m activation-summaries/output-rms: 0.037425
+[32m[0320 21:53:07 @monitor.py:363][0m cross_entropy_loss: 1.8615
+[32m[0320 21:53:07 @monitor.py:363][0m lr: 3.125e-05
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72528
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/conv0/b-rms: 9.0287e-05
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.63483
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3811
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/linear0/W-rms: 0.4731
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/linear1/W-rms: 0.39121
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/linear2/W-rms: 0.37959
+[32m[0320 21:53:07 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 21:53:07 @monitor.py:363][0m train-error-top1: 0.49047
+[32m[0320 21:53:07 @monitor.py:363][0m val-error-top1: 0.54156
+[32m[0320 21:53:07 @monitor.py:363][0m val-utt-error: 0.174
+[32m[0320 21:53:07 @monitor.py:363][0m validation_cost: 2.1107
+[32m[0320 21:53:07 @monitor.py:363][0m wd_cost: 0.0019076
+[32m[0320 21:53:07 @group.py:42][0m Callbacks took 104.204 sec in total. InferenceRunner: 103.920sec
+[32m[0320 21:53:07 @base.py:247][0m Start Epoch 17 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|6         |12130/173481[03:00<39:54,67.39it/s]  7%|7         |12750/173481[03:10<39:45,67.39it/s] 14%|#3        |23709/173481[06:00<37:55,65.82it/s] 14%|#4        |24366/173481[06:10<37:45,65.82it/s] 20%|##        |35204/173481[09:00<35:33,64.83it/s] 21%|##        |35832/173481[09:10<35:23,64.83it/s] 27%|##6       |46482/173481[12:00<33:13,63.72it/s] 27%|##7       |47161/173481[12:10<33:02,63.72it/s] 34%|###3      |58783/173481[15:00<28:59,65.95it/s] 34%|###4      |59557/173481[15:10<28:47,65.95it/s] 41%|####1     |71413/173481[18:00<25:01,67.98it/s] 42%|####1     |72170/173481[18:10<24:50,67.98it/s] 49%|####8     |84379/173481[21:00<21:13,69.94it/s] 49%|####9     |85260/173481[21:11<21:01,69.94it/s] 56%|#####6    |97404/173481[24:00<17:49,71.13it/s] 57%|#####6    |98160/173481[24:11<17:38,71.13it/s] 63%|######3   |109447/173481[27:00<15:28,68.95it/s] 64%|######3   |110171/173481[27:11<15:18,68.95it/s] 70%|#######   |121485/173481[30:00<12:45,67.90it/s] 70%|#######   |122204/173481[30:11<12:35,67.90it/s] 77%|#######6  |132743/173481[33:00<10:25,65.11it/s] 77%|#######6  |133410/173481[33:11<10:15,65.11it/s] 83%|########2 |143601/173481[36:00<07:57,62.62it/s] 83%|########3 |144414/173481[36:11<07:44,62.62it/s] 90%|######### |156329/173481[39:00<04:18,66.42it/s] 91%|######### |157116/173481[39:11<04:06,66.42it/s] 97%|#########7|168649/173481[42:00<01:11,67.41it/s] 98%|#########7|169506/173481[42:12<00:58,67.41it/s]100%|##########|173481/173481[43:10<00:00,66.98it/s]
+[32m[0320 22:36:17 @base.py:257][0m Epoch 17 (global_step 2602215) finished, time:2590.15 sec.
+[32m[0320 22:36:17 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-2602215.
+[32m[0320 22:36:17 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:49<00:00,171.95it/s]
+14
+[32m[0320 22:38:07 @monitor.py:363][0m QueueInput/queue_size: 0.55657
+[32m[0320 22:38:07 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 39.792
+[32m[0320 22:38:07 @monitor.py:363][0m activation-summaries/output-rms: 0.037968
+[32m[0320 22:38:07 @monitor.py:363][0m cross_entropy_loss: 1.8684
+[32m[0320 22:38:07 @monitor.py:363][0m lr: 3.125e-05
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72559
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/conv0/b-rms: 9.0555e-05
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.65122
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3828
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/linear0/W-rms: 0.48128
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/linear1/W-rms: 0.39587
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/linear2/W-rms: 0.38399
+[32m[0320 22:38:07 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 22:38:07 @monitor.py:363][0m train-error-top1: 0.49357
+[32m[0320 22:38:07 @monitor.py:363][0m val-error-top1: 0.54529
+[32m[0320 22:38:07 @monitor.py:363][0m val-utt-error: 0.17634
+[32m[0320 22:38:07 @monitor.py:363][0m validation_cost: 2.1312
+[32m[0320 22:38:07 @monitor.py:363][0m wd_cost: 0.0019817
+[32m[0320 22:38:07 @group.py:42][0m Callbacks took 109.884 sec in total. InferenceRunner: 109.471sec
+[32m[0320 22:38:07 @base.py:247][0m Start Epoch 18 ...
+  0%|          |0/173481[00:00<?,?it/s]  6%|6         |10659/173481[03:00<45:49,59.22it/s]  6%|6         |11001/173481[03:10<45:43,59.22it/s] 12%|#2        |20880/173481[06:00<43:52,57.97it/s] 12%|#2        |21477/173481[06:10<43:41,57.97it/s] 19%|#9        |33020/173481[09:00<37:32,62.35it/s] 20%|#9        |33916/173481[09:10<37:18,62.35it/s] 26%|##5       |44920/173481[12:00<33:23,64.17it/s] 26%|##6       |45903/173481[12:10<33:08,64.17it/s] 33%|###3      |57532/173481[15:00<28:51,66.98it/s] 34%|###3      |58299/173481[15:10<28:39,66.98it/s] 40%|####      |70156/173481[18:00<25:08,68.51it/s] 41%|####      |70851/173481[18:10<24:57,68.51it/s] 47%|####7     |82343/173481[21:00<22:18,68.11it/s] 48%|####7     |83037/173481[21:11<22:07,68.11it/s] 54%|#####4    |94300/173481[24:00<19:37,67.25it/s] 55%|#####4    |95072/173481[24:11<19:26,67.25it/s] 62%|######1   |106708/173481[27:00<16:20,68.08it/s] 62%|######1   |107481/173481[27:11<16:09,68.08it/s] 68%|######8   |118618/173481[30:00<13:37,67.11it/s] 69%|######8   |119391/173481[30:11<13:26,67.11it/s] 75%|#######5  |130235/173481[33:00<10:57,65.80it/s] 75%|#######5  |130947/173481[33:11<10:46,65.80it/s] 82%|########2 |142726/173481[36:00<07:35,67.54it/s] 83%|########2 |143557/173481[36:11<07:23,67.54it/s] 90%|########9 |155810/173481[39:00<04:12,70.02it/s] 90%|######### |156663/173481[39:11<04:00,70.02it/s] 97%|#########7|168814/173481[42:00<01:05,71.11it/s] 98%|#########7|169564/173481[42:12<00:55,71.11it/s]100%|##########|173481/173481[43:11<00:00,66.96it/s]
+[32m[0320 23:21:18 @base.py:257][0m Epoch 18 (global_step 2775696) finished, time:2591.00 sec.
+[32m[0320 23:21:18 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-2775696.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:58<00:00,158.95it/s]
+15
+[32m[0320 23:23:16 @monitor.py:363][0m QueueInput/queue_size: 0.94346
+[32m[0320 23:23:16 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 40.915
+[32m[0320 23:23:16 @monitor.py:363][0m activation-summaries/output-rms: 0.036624
+[32m[0320 23:23:16 @monitor.py:363][0m cross_entropy_loss: 1.971
+[32m[0320 23:23:16 @monitor.py:363][0m lr: 3.125e-05
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72647
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/conv0/b-rms: 9.1942e-05
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.66758
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3846
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/linear0/W-rms: 0.48953
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/linear1/W-rms: 0.40066
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/linear2/W-rms: 0.38855
+[32m[0320 23:23:16 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0320 23:23:16 @monitor.py:363][0m train-error-top1: 0.51097
+[32m[0320 23:23:16 @monitor.py:363][0m val-error-top1: 0.55427
+[32m[0320 23:23:16 @monitor.py:363][0m val-utt-error: 0.18011
+[32m[0320 23:23:16 @monitor.py:363][0m validation_cost: 2.1746
+[32m[0320 23:23:16 @monitor.py:363][0m wd_cost: 0.0020579
+[32m[0320 23:23:16 @group.py:42][0m Callbacks took 118.674 sec in total. InferenceRunner: 118.422sec
+[32m[0320 23:23:16 @base.py:247][0m Start Epoch 19 ...
+  0%|          |0/173481[00:00<?,?it/s]  9%|8         |14969/173481[03:00<31:46,83.16it/s]  9%|9         |15745/173481[03:10<31:36,83.16it/s] 16%|#6        |27772/173481[06:00<31:40,76.67it/s] 16%|#6        |28458/173481[06:10<31:31,76.67it/s] 23%|##3       |40033/173481[09:00<30:49,72.14it/s] 23%|##3       |40752/173481[09:10<30:39,72.14it/s] 30%|###       |52525/173481[12:00<28:29,70.74it/s] 31%|###       |53318/173481[12:10<28:18,70.74it/s] 38%|###7      |65436/173481[15:00<25:16,71.23it/s] 38%|###8      |66156/173481[15:10<25:06,71.23it/s] 45%|####5     |78240/173481[18:00<22:18,71.18it/s] 46%|####5     |78948/173481[18:10<22:08,71.18it/s] 52%|#####2    |90799/173481[21:00<19:33,70.46it/s] 53%|#####2    |91602/173481[21:11<19:22,70.46it/s] 59%|#####8    |102337/173481[24:00<17:39,67.12it/s] 59%|#####9    |102966/173481[24:11<17:30,67.12it/s] 66%|######5   |113694/173481[27:00<15:19,65.05it/s] 66%|######5   |114491/173481[27:11<15:06,65.05it/s] 73%|#######2  |126466/173481[30:00<11:32,67.87it/s] 73%|#######3  |127292/173481[30:11<11:20,67.87it/s] 80%|#######9  |138356/173481[33:00<08:44,66.95it/s] 80%|########  |139054/173481[33:11<08:34,66.95it/s] 87%|########6 |150201/173481[36:00<05:50,66.37it/s] 87%|########6 |150912/173481[36:11<05:40,66.37it/s] 94%|#########3|162691/173481[39:00<02:39,67.84it/s] 94%|#########4|163460/173481[39:11<02:27,67.84it/s]100%|##########|173481/173481[41:50<00:00,69.10it/s]
+[32m[0321 00:05:07 @base.py:257][0m Epoch 19 (global_step 2949177) finished, time:2510.71 sec.
+[32m[0321 00:05:07 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-2949177.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:44<00:00,179.26it/s]
+16
+[32m[0321 00:06:52 @monitor.py:363][0m QueueInput/queue_size: 0.38064
+[32m[0321 00:06:52 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 42.223
+[32m[0321 00:06:52 @monitor.py:363][0m activation-summaries/output-rms: 0.038595
+[32m[0321 00:06:52 @monitor.py:363][0m cross_entropy_loss: 1.8906
+[32m[0321 00:06:52 @monitor.py:363][0m lr: 1.5625e-05
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72683
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/conv0/b-rms: 9.0862e-05
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.67873
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3857
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/linear0/W-rms: 0.49479
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/linear1/W-rms: 0.40359
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39132
+[32m[0321 00:06:52 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 00:06:52 @monitor.py:363][0m train-error-top1: 0.50711
+[32m[0321 00:06:52 @monitor.py:363][0m val-error-top1: 0.54725
+[32m[0321 00:06:52 @monitor.py:363][0m val-utt-error: 0.17389
+[32m[0321 00:06:52 @monitor.py:363][0m validation_cost: 2.1425
+[32m[0321 00:06:52 @monitor.py:363][0m wd_cost: 0.00042178
+[32m[0321 00:06:52 @group.py:42][0m Callbacks took 105.311 sec in total. InferenceRunner: 105.006sec
+[32m[0321 00:06:52 @base.py:247][0m Start Epoch 20 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12240/173481[03:00<39:31,68.00it/s]  7%|7         |12885/173481[03:10<39:21,68.00it/s] 14%|#3        |24140/173481[06:00<37:07,67.04it/s] 14%|#4        |24903/173481[06:10<36:56,67.04it/s] 21%|##1       |37109/173481[09:00<32:43,69.45it/s] 22%|##1       |37877/173481[09:10<32:32,69.45it/s] 29%|##8       |49666/173481[12:00<29:38,69.61it/s] 29%|##9       |50333/173481[12:10<29:29,69.61it/s] 35%|###5      |61411/173481[15:00<27:43,67.36it/s] 36%|###5      |62115/173481[15:10<27:33,67.36it/s] 42%|####1     |72478/173481[18:00<26:11,64.27it/s] 42%|####2     |73135/173481[18:10<26:01,64.27it/s] 49%|####8     |84424/173481[21:00<22:43,65.29it/s] 49%|####9     |85176/173481[21:11<22:32,65.29it/s] 56%|#####5    |96646/173481[24:00<19:14,66.56it/s] 56%|#####6    |97395/173481[24:11<19:03,66.56it/s] 63%|######2   |109090/173481[27:00<15:49,67.82it/s] 63%|######3   |109869/173481[27:11<15:37,67.82it/s] 70%|#######   |121506/173481[30:00<12:39,68.39it/s] 70%|#######   |122248/173481[30:11<12:29,68.39it/s] 77%|#######7  |133823/173481[33:00<09:39,68.41it/s] 78%|#######7  |134637/173481[33:11<09:27,68.41it/s] 84%|########4 |146086/173481[36:00<06:41,68.27it/s] 85%|########4 |146831/173481[36:11<06:30,68.27it/s] 91%|#########1|158266/173481[39:00<03:43,67.96it/s] 92%|#########1|159046/173481[39:11<03:32,67.96it/s] 98%|#########8|170578/173481[42:00<00:42,68.17it/s] 99%|#########8|171405/173481[42:12<00:30,68.17it/s]100%|##########|173481/173481[42:42<00:00,67.70it/s]
+[32m[0321 00:49:35 @base.py:257][0m Epoch 20 (global_step 3122658) finished, time:2562.52 sec.
+[32m[0321 00:49:35 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-3122658.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:53<00:00,166.01it/s]
+17
+[32m[0321 00:51:28 @monitor.py:363][0m QueueInput/queue_size: 0.46776
+[32m[0321 00:51:28 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 43.116
+[32m[0321 00:51:28 @monitor.py:363][0m activation-summaries/output-rms: 0.038606
+[32m[0321 00:51:28 @monitor.py:363][0m cross_entropy_loss: 1.8662
+[32m[0321 00:51:28 @monitor.py:363][0m lr: 1.5625e-05
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72697
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/conv0/b-rms: 9.125e-05
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.68725
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3866
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/linear0/W-rms: 0.49878
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/linear1/W-rms: 0.40576
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39335
+[32m[0321 00:51:28 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 00:51:28 @monitor.py:363][0m train-error-top1: 0.49178
+[32m[0321 00:51:28 @monitor.py:363][0m val-error-top1: 0.55204
+[32m[0321 00:51:28 @monitor.py:363][0m val-utt-error: 0.17857
+[32m[0321 00:51:28 @monitor.py:363][0m validation_cost: 2.1724
+[32m[0321 00:51:28 @monitor.py:363][0m wd_cost: 0.00042961
+[32m[0321 00:51:28 @group.py:42][0m Callbacks took 113.695 sec in total. InferenceRunner: 113.400sec
+[32m[0321 00:51:28 @base.py:247][0m Start Epoch 21 ...
+  0%|          |0/173481[00:00<?,?it/s]  9%|8         |14833/173481[03:00<32:05,82.40it/s]  9%|9         |15805/173481[03:10<31:53,82.40it/s] 18%|#7        |30823/173481[06:00<27:48,85.49it/s] 18%|#8        |31524/173481[06:10<27:40,85.49it/s] 25%|##4       |42791/173481[09:00<29:07,74.80it/s] 25%|##5       |43488/173481[09:10<28:57,74.80it/s] 32%|###1      |55309/173481[12:00<27:19,72.08it/s] 32%|###2      |56064/173481[12:10<27:09,72.08it/s] 39%|###9      |68003/173481[15:00<24:39,71.29it/s] 40%|###9      |68778/173481[15:10<24:28,71.29it/s] 47%|####6     |81331/173481[18:00<21:08,72.64it/s] 47%|####7     |82168/173481[18:10<20:57,72.64it/s] 54%|#####4    |93892/173481[21:00<18:38,71.18it/s] 55%|#####4    |94664/173481[21:11<18:27,71.18it/s] 61%|######1   |105961/173481[24:00<16:17,69.05it/s] 62%|######1   |106698/173481[24:11<16:07,69.05it/s] 68%|######7   |117960/173481[27:00<13:38,67.83it/s] 68%|######8   |118794/173481[27:11<13:26,67.83it/s] 75%|#######5  |130447/173481[30:00<10:27,68.59it/s] 76%|#######5  |131226/173481[30:11<10:16,68.59it/s] 82%|########2 |142273/173481[33:00<07:45,67.11it/s] 82%|########2 |143038/173481[33:11<07:33,67.11it/s] 89%|########8 |153721/173481[36:00<05:02,65.30it/s] 89%|########9 |154446/173481[36:11<04:51,65.30it/s] 95%|#########5|165145/173481[39:00<02:09,64.36it/s] 96%|#########5|165796/173481[39:11<01:59,64.36it/s]100%|##########|173481/173481[41:11<00:00,70.20it/s]
+[32m[0321 01:32:40 @base.py:257][0m Epoch 21 (global_step 3296139) finished, time:2471.44 sec.
+[32m[0321 01:32:40 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-3296139.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:49<00:00,172.00it/s]
+18
+[32m[0321 01:34:30 @monitor.py:363][0m QueueInput/queue_size: 0.24064
+[32m[0321 01:34:30 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 43.484
+[32m[0321 01:34:30 @monitor.py:363][0m activation-summaries/output-rms: 0.037928
+[32m[0321 01:34:30 @monitor.py:363][0m cross_entropy_loss: 1.8928
+[32m[0321 01:34:30 @monitor.py:363][0m lr: 1.5625e-05
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72716
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/conv0/b-rms: 9.1274e-05
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.69577
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3872
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/linear0/W-rms: 0.50283
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/linear1/W-rms: 0.40802
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39546
+[32m[0321 01:34:30 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 01:34:30 @monitor.py:363][0m train-error-top1: 0.498
+[32m[0321 01:34:30 @monitor.py:363][0m val-error-top1: 0.53907
+[32m[0321 01:34:30 @monitor.py:363][0m val-utt-error: 0.16619
+[32m[0321 01:34:30 @monitor.py:363][0m validation_cost: 2.0953
+[32m[0321 01:34:30 @monitor.py:363][0m wd_cost: 0.0004376
+[32m[0321 01:34:30 @group.py:42][0m Callbacks took 109.823 sec in total. InferenceRunner: 109.442sec
+[32m[0321 01:34:30 @base.py:247][0m Start Epoch 22 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12396/173481[03:00<38:59,68.87it/s]  8%|7         |13029/173481[03:10<38:49,68.87it/s] 14%|#3        |23692/173481[06:00<38:01,65.66it/s] 14%|#4        |24363/173481[06:10<37:51,65.66it/s] 21%|##        |35651/173481[09:00<34:46,66.04it/s] 21%|##        |36299/173481[09:10<34:37,66.04it/s] 28%|##7       |47821/173481[12:00<31:20,66.82it/s] 28%|##7       |48549/173481[12:10<31:09,66.82it/s] 35%|###4      |60515/173481[15:00<27:26,68.62it/s] 35%|###5      |61086/173481[15:10<27:17,68.62it/s] 42%|####2     |72907/173481[18:00<24:23,68.73it/s] 42%|####2     |73638/173481[18:10<24:12,68.73it/s] 49%|####8     |84368/173481[21:00<22:28,66.10it/s] 49%|####9     |85047/173481[21:11<22:17,66.10it/s] 55%|#####5    |96070/173481[24:00<19:41,65.55it/s] 56%|#####5    |96812/173481[24:11<19:29,65.55it/s] 62%|######2   |108205/173481[27:00<16:22,66.47it/s] 63%|######2   |108957/173481[27:11<16:10,66.47it/s] 69%|######9   |119734/173481[30:00<13:43,65.23it/s] 69%|######9   |120483/173481[30:11<13:32,65.23it/s] 76%|#######5  |131152/173481[33:00<10:58,64.32it/s] 76%|#######6  |131871/173481[33:11<10:46,64.32it/s] 82%|########2 |142624/173481[36:00<08:01,64.02it/s] 83%|########2 |143481/173481[36:11<07:48,64.02it/s] 89%|########9 |154558/173481[39:00<04:50,65.13it/s] 90%|########9 |155345/173481[39:11<04:38,65.13it/s] 96%|#########6|166852/173481[42:00<01:39,66.67it/s] 97%|#########6|167696/173481[42:12<01:26,66.67it/s]100%|##########|173481/173481[43:42<00:00,66.15it/s]
+[32m[0321 02:18:12 @base.py:257][0m Epoch 22 (global_step 3469620) finished, time:2622.56 sec.
+[32m[0321 02:18:13 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-3469620.
+[32m[0321 02:18:13 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:40<00:00,186.74it/s]
+19
+[32m[0321 02:19:54 @monitor.py:363][0m QueueInput/queue_size: 1.2187
+[32m[0321 02:19:54 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 44.266
+[32m[0321 02:19:54 @monitor.py:363][0m activation-summaries/output-rms: 0.037612
+[32m[0321 02:19:54 @monitor.py:363][0m cross_entropy_loss: 1.8441
+[32m[0321 02:19:54 @monitor.py:363][0m lr: 7.8125e-06
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72723
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/conv0/b-rms: 9.1324e-05
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.70036
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3877
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/linear0/W-rms: 0.5048
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/linear1/W-rms: 0.40905
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39642
+[32m[0321 02:19:54 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 02:19:54 @monitor.py:363][0m train-error-top1: 0.4796
+[32m[0321 02:19:54 @monitor.py:363][0m val-error-top1: 0.55137
+[32m[0321 02:19:54 @monitor.py:363][0m val-utt-error: 0.18457
+[32m[0321 02:19:54 @monitor.py:363][0m validation_cost: 2.1682
+[32m[0321 02:19:54 @monitor.py:363][0m wd_cost: 8.8346e-05
+[32m[0321 02:19:54 @group.py:42][0m Callbacks took 101.488 sec in total. InferenceRunner: 100.801sec
+[32m[0321 02:19:54 @base.py:247][0m Start Epoch 23 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12670/173481[03:00<38:04,70.39it/s]  8%|7         |13325/173481[03:10<37:55,70.39it/s] 14%|#4        |24890/173481[06:00<35:49,69.11it/s] 15%|#4        |25602/173481[06:10<35:39,69.11it/s] 22%|##1       |37351/173481[09:00<32:48,69.16it/s] 22%|##1       |38031/173481[09:10<32:38,69.16it/s] 29%|##8       |49693/173481[12:00<29:57,68.85it/s] 29%|##9       |50393/173481[12:10<29:47,68.85it/s] 36%|###5      |62101/173481[15:00<26:56,68.89it/s] 36%|###6      |62831/173481[15:10<26:46,68.89it/s] 43%|####2     |74593/173481[18:00<23:50,69.14it/s] 43%|####3     |75444/173481[18:10<23:37,69.14it/s] 51%|#####     |88060/173481[21:00<19:48,71.86it/s] 51%|#####1    |88847/173481[21:11<19:37,71.86it/s] 59%|#####8    |102031/173481[24:00<15:57,74.63it/s] 59%|#####9    |102738/173481[24:11<15:47,74.63it/s] 66%|######5   |114055/173481[27:00<14:02,70.50it/s] 66%|######6   |114828/173481[27:11<13:51,70.50it/s] 73%|#######2  |126265/173481[30:00<11:22,69.14it/s] 73%|#######3  |127038/173481[30:11<11:11,69.14it/s] 80%|#######9  |138435/173481[33:00<08:32,68.36it/s] 80%|########  |139185/173481[33:11<08:21,68.36it/s] 87%|########7 |151197/173481[36:00<05:20,69.60it/s] 88%|########7 |152064/173481[36:11<05:07,69.60it/s] 95%|#########4|164365/173481[39:00<02:07,71.33it/s] 95%|#########5|165229/173481[39:11<01:55,71.33it/s]100%|##########|173481/173481[41:05<00:00,70.37it/s]
+[32m[0321 03:00:59 @base.py:257][0m Epoch 23 (global_step 3643101) finished, time:2465.25 sec.
+[32m[0321 03:00:59 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-3643101.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:59<00:00,157.08it/s]
+20
+[32m[0321 03:02:59 @monitor.py:363][0m QueueInput/queue_size: 0.19418
+[32m[0321 03:02:59 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 44.384
+[32m[0321 03:02:59 @monitor.py:363][0m activation-summaries/output-rms: 0.03842
+[32m[0321 03:02:59 @monitor.py:363][0m cross_entropy_loss: 1.8681
+[32m[0321 03:02:59 @monitor.py:363][0m lr: 7.8125e-06
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72717
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/conv0/b-rms: 9.122e-05
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.70471
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3879
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/linear0/W-rms: 0.50674
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/linear1/W-rms: 0.4101
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39738
+[32m[0321 03:02:59 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 03:02:59 @monitor.py:363][0m train-error-top1: 0.49636
+[32m[0321 03:02:59 @monitor.py:363][0m val-error-top1: 0.54088
+[32m[0321 03:02:59 @monitor.py:363][0m val-utt-error: 0.17681
+[32m[0321 03:02:59 @monitor.py:363][0m validation_cost: 2.1121
+[32m[0321 03:02:59 @monitor.py:363][0m wd_cost: 8.9147e-05
+[32m[0321 03:02:59 @group.py:42][0m Callbacks took 120.198 sec in total. InferenceRunner: 119.835sec
+[32m[0321 03:02:59 @base.py:247][0m Start Epoch 24 ...
+  0%|          |0/173481[00:00<?,?it/s]  9%|8         |14847/173481[03:00<32:03,82.48it/s]  9%|9         |15705/173481[03:10<31:52,82.48it/s] 16%|#6        |27795/173481[06:00<31:35,76.85it/s] 17%|#6        |28656/173481[06:10<31:24,76.85it/s] 24%|##3       |41441/173481[09:00<28:50,76.32it/s] 24%|##4       |42129/173481[09:10<28:41,76.32it/s] 31%|###1      |54346/173481[12:00<26:51,73.93it/s] 32%|###1      |55150/173481[12:10<26:40,73.93it/s] 39%|###9      |67683/173481[15:00<23:49,74.01it/s] 39%|###9      |68513/173481[15:10<23:38,74.01it/s] 47%|####6     |81418/173481[18:00<20:25,75.14it/s] 47%|####7     |82227/173481[18:10<20:14,75.14it/s] 55%|#####4    |94744/173481[21:00<17:35,74.57it/s] 55%|#####5    |95619/173481[21:11<17:24,74.57it/s] 63%|######2   |108597/173481[24:00<14:16,75.74it/s] 63%|######3   |109465/173481[24:11<14:05,75.74it/s] 70%|#######   |121886/173481[27:00<11:30,74.77it/s] 71%|#######   |122654/173481[27:11<11:19,74.77it/s] 78%|#######7  |134565/173481[30:00<08:56,72.54it/s] 78%|#######8  |135387/173481[30:11<08:45,72.54it/s] 85%|########5 |148161/173481[33:00<05:42,74.00it/s] 86%|########5 |149043/173481[33:11<05:30,74.00it/s] 93%|#########3|162188/173481[36:00<02:28,75.92it/s] 94%|#########4|163108/173481[36:11<02:16,75.92it/s]100%|##########|173481/173481[38:29<00:00,75.11it/s]
+[32m[0321 03:41:29 @base.py:257][0m Epoch 24 (global_step 3816582) finished, time:2309.79 sec.
+[32m[0321 03:41:29 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-3816582.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:52<00:00,167.84it/s]
+21
+[32m[0321 03:43:21 @monitor.py:363][0m QueueInput/queue_size: 0.34281
+[32m[0321 03:43:21 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 44.717
+[32m[0321 03:43:21 @monitor.py:363][0m activation-summaries/output-rms: 0.036876
+[32m[0321 03:43:21 @monitor.py:363][0m cross_entropy_loss: 1.9491
+[32m[0321 03:43:21 @monitor.py:363][0m lr: 3.9063e-06
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72725
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/conv0/b-rms: 9.1763e-05
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.70857
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3884
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/linear0/W-rms: 0.50845
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/linear1/W-rms: 0.411
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39823
+[32m[0321 03:43:21 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 03:43:21 @monitor.py:363][0m train-error-top1: 0.50264
+[32m[0321 03:43:21 @monitor.py:363][0m val-error-top1: 0.53463
+[32m[0321 03:43:21 @monitor.py:363][0m val-utt-error: 0.16252
+[32m[0321 03:43:21 @monitor.py:363][0m validation_cost: 2.0733
+[32m[0321 03:43:21 @monitor.py:363][0m wd_cost: 8.9857e-05
+[32m[0321 03:43:21 @group.py:42][0m Callbacks took 112.428 sec in total. InferenceRunner: 112.155sec
+[32m[0321 03:43:21 @base.py:247][0m Start Epoch 25 ...
+  0%|          |0/173481[00:00<?,?it/s]  9%|8         |15013/173481[03:00<31:39,83.40it/s]  9%|9         |15788/173481[03:10<31:30,83.40it/s] 16%|#6        |28556/173481[06:00<30:32,79.11it/s] 17%|#6        |29368/173481[06:10<30:21,79.11it/s] 24%|##4       |41866/173481[09:00<28:42,76.43it/s] 25%|##4       |42669/173481[09:10<28:31,76.43it/s] 32%|###1      |55399/173481[12:00<25:57,75.80it/s] 32%|###2      |56202/173481[12:10<25:47,75.80it/s] 40%|###9      |68664/173481[15:00<23:22,74.73it/s] 40%|####      |69477/173481[15:10<23:11,74.73it/s] 47%|####7     |81739/173481[18:00<20:45,73.67it/s] 48%|####7     |82530/173481[18:10<20:34,73.67it/s] 55%|#####4    |94987/173481[21:00<17:46,73.63it/s] 55%|#####5    |95820/173481[21:11<17:34,73.63it/s] 62%|######2   |108318/173481[24:00<14:42,73.84it/s] 63%|######2   |109140/173481[24:11<14:31,73.84it/s] 70%|#######   |121859/173481[27:00<11:32,74.53it/s] 71%|#######   |122715/173481[27:11<11:21,74.53it/s] 78%|#######8  |135793/173481[30:00<08:16,75.94it/s] 79%|#######8  |136698/173481[30:11<08:04,75.94it/s] 88%|########7 |151886/173481[33:00<04:22,82.12it/s] 88%|########8 |152947/173481[33:11<04:10,82.12it/s] 97%|#########7|168491/173481[36:00<00:57,86.89it/s] 98%|#########7|169554/173481[36:11<00:45,86.89it/s]100%|##########|173481/173481[36:54<00:00,78.34it/s]
+[32m[0321 04:20:16 @base.py:257][0m Epoch 25 (global_step 3990063) finished, time:2214.52 sec.
+[32m[0321 04:20:16 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-3990063.
+[32m[0321 04:20:17 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:48<00:00,173.07it/s]
+22
+[32m[0321 04:22:05 @monitor.py:363][0m QueueInput/queue_size: 0.31252
+[32m[0321 04:22:05 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 45.181
+[32m[0321 04:22:05 @monitor.py:363][0m activation-summaries/output-rms: 0.038467
+[32m[0321 04:22:05 @monitor.py:363][0m cross_entropy_loss: 1.8804
+[32m[0321 04:22:05 @monitor.py:363][0m lr: 3.9063e-06
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/conv0/W-rms: 0.7273
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/conv0/b-rms: 9.1966e-05
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.7108
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3886
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/linear0/W-rms: 0.50935
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/linear1/W-rms: 0.41147
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39866
+[32m[0321 04:22:05 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 04:22:05 @monitor.py:363][0m train-error-top1: 0.50083
+[32m[0321 04:22:05 @monitor.py:363][0m val-error-top1: 0.54359
+[32m[0321 04:22:05 @monitor.py:363][0m val-utt-error: 0.1731
+[32m[0321 04:22:05 @monitor.py:363][0m validation_cost: 2.1283
+[32m[0321 04:22:05 @monitor.py:363][0m wd_cost: 1.8051e-05
+[32m[0321 04:22:05 @group.py:42][0m Callbacks took 109.364 sec in total. InferenceRunner: 108.766sec
+[32m[0321 04:22:05 @base.py:247][0m Start Epoch 26 ...
+  0%|          |0/173481[00:00<?,?it/s] 10%|#         |17412/173481[03:00<26:53,96.73it/s] 11%|#         |18368/173481[03:10<26:43,96.73it/s] 20%|#9        |34105/173481[06:00<24:31,94.69it/s] 20%|##        |35055/173481[06:10<24:21,94.69it/s] 29%|##9       |50777/173481[09:00<21:50,93.64it/s] 30%|##9       |51753/173481[09:10<21:39,93.64it/s] 38%|###7      |65749/173481[12:00<20:22,88.10it/s] 38%|###8      |66528/173481[12:10<20:13,88.10it/s] 46%|####5     |78957/173481[15:00<19:40,80.07it/s] 46%|####5     |79712/173481[15:10<19:31,80.07it/s] 53%|#####3    |91990/173481[18:00<17:51,76.04it/s] 53%|#####3    |92794/173481[18:10<17:41,76.04it/s] 60%|######    |104913/173481[21:00<15:28,73.86it/s] 61%|######    |105722/173481[21:11<15:17,73.86it/s] 68%|######7   |117945/173481[24:00<12:39,73.11it/s] 68%|######8   |118711/173481[24:11<12:29,73.11it/s] 75%|#######5  |130977/173481[27:00<09:44,72.75it/s] 76%|#######5  |131835/173481[27:11<09:32,72.75it/s] 83%|########3 |144313/173481[30:00<06:37,73.41it/s] 84%|########3 |145089/173481[30:11<06:26,73.41it/s] 91%|######### |157677/173481[33:00<03:34,73.83it/s] 91%|#########1|158548/173481[33:11<03:22,73.83it/s] 98%|#########8|170798/173481[36:00<00:36,73.35it/s] 99%|#########8|171678/173481[36:11<00:24,73.35it/s]100%|##########|173481/173481[36:36<00:00,78.99it/s]
+[32m[0321 04:58:41 @base.py:257][0m Epoch 26 (global_step 4163544) finished, time:2196.15 sec.
+[32m[0321 04:58:42 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-4163544.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:51<00:00,168.61it/s]
+23
+[32m[0321 05:00:33 @monitor.py:363][0m QueueInput/queue_size: 0.12617
+[32m[0321 05:00:33 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 45.641
+[32m[0321 05:00:33 @monitor.py:363][0m activation-summaries/output-rms: 0.038838
+[32m[0321 05:00:33 @monitor.py:363][0m cross_entropy_loss: 1.865
+[32m[0321 05:00:33 @monitor.py:363][0m lr: 3.9063e-06
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72727
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/conv0/b-rms: 9.1904e-05
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.71299
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3888
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/linear0/W-rms: 0.51028
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/linear1/W-rms: 0.41196
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39912
+[32m[0321 05:00:33 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 05:00:33 @monitor.py:363][0m train-error-top1: 0.49166
+[32m[0321 05:00:33 @monitor.py:363][0m val-error-top1: 0.54477
+[32m[0321 05:00:33 @monitor.py:363][0m val-utt-error: 0.17081
+[32m[0321 05:00:33 @monitor.py:363][0m validation_cost: 2.1258
+[32m[0321 05:00:33 @monitor.py:363][0m wd_cost: 1.8131e-05
+[32m[0321 05:00:33 @group.py:42][0m Callbacks took 111.988 sec in total. InferenceRunner: 111.640sec
+[32m[0321 05:00:33 @base.py:247][0m Start Epoch 27 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12872/173481[03:00<37:25,71.51it/s]  8%|7         |13820/173481[03:10<37:12,71.51it/s] 17%|#6        |29480/173481[06:00<29:47,80.57it/s] 18%|#7        |30437/173481[06:10<29:35,80.57it/s] 25%|##5       |43908/173481[09:00<26:52,80.36it/s] 26%|##5       |44622/173481[09:10<26:43,80.36it/s] 33%|###2      |56653/173481[12:00<25:52,75.28it/s] 33%|###3      |57396/173481[12:10<25:42,75.28it/s] 40%|###9      |69355/173481[15:00<23:49,72.84it/s] 40%|####      |70138/173481[15:10<23:38,72.84it/s] 48%|####7     |83110/173481[18:00<20:11,74.58it/s] 48%|####8     |83935/173481[18:10<20:00,74.58it/s] 55%|#####5    |96139/173481[21:00<17:33,73.42it/s] 56%|#####5    |96324/173481[21:11<17:30,73.42it/s] 63%|######2   |109231/173481[24:00<14:39,73.07it/s] 63%|######3   |109938/173481[24:11<14:29,73.07it/s] 70%|#######   |121813/173481[27:00<12:03,71.44it/s] 71%|#######   |122588/173481[27:11<11:52,71.44it/s] 77%|#######7  |134438/173481[30:00<09:11,70.78it/s] 78%|#######7  |135216/173481[30:11<09:00,70.78it/s] 85%|########4 |146698/173481[33:00<06:25,69.42it/s] 85%|########5 |147500/173481[33:11<06:14,69.42it/s] 92%|#########1|159577/173481[36:00<03:17,70.46it/s] 92%|#########2|160421/173481[36:11<03:05,70.46it/s] 99%|#########9|172525/173481[39:00<00:13,71.18it/s]100%|#########9|173316/173481[39:11<00:02,71.18it/s]100%|##########|173481/173481[39:14<00:00,73.68it/s]
+[32m[0321 05:39:48 @base.py:257][0m Epoch 27 (global_step 4337025) finished, time:2354.44 sec.
+[32m[0321 05:39:48 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-4337025.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[02:12<00:00,141.99it/s]
+24
+[32m[0321 05:42:01 @monitor.py:363][0m QueueInput/queue_size: 0.50638
+[32m[0321 05:42:01 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 45.355
+[32m[0321 05:42:01 @monitor.py:363][0m activation-summaries/output-rms: 0.037911
+[32m[0321 05:42:01 @monitor.py:363][0m cross_entropy_loss: 1.8813
+[32m[0321 05:42:01 @monitor.py:363][0m lr: 1.9531e-06
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72728
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/conv0/b-rms: 9.2084e-05
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.71465
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3889
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/linear0/W-rms: 0.51096
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/linear1/W-rms: 0.41232
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39944
+[32m[0321 05:42:01 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 05:42:01 @monitor.py:363][0m train-error-top1: 0.48903
+[32m[0321 05:42:01 @monitor.py:363][0m val-error-top1: 0.54485
+[32m[0321 05:42:01 @monitor.py:363][0m val-utt-error: 0.17272
+[32m[0321 05:42:01 @monitor.py:363][0m validation_cost: 2.135
+[32m[0321 05:42:01 @monitor.py:363][0m wd_cost: 3.6382e-06
+[32m[0321 05:42:01 @group.py:42][0m Callbacks took 132.909 sec in total. InferenceRunner: 132.570sec
+[32m[0321 05:42:01 @base.py:247][0m Start Epoch 28 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|7         |13048/173481[03:00<36:54,72.46it/s]  8%|7         |13753/173481[03:10<36:44,72.46it/s] 15%|#4        |25378/173481[06:00<35:03,70.42it/s] 15%|#5        |26076/173481[06:10<34:53,70.42it/s] 22%|##1       |37653/173481[09:00<32:40,69.29it/s] 22%|##2       |38494/173481[09:10<32:28,69.29it/s] 29%|##9       |50452/173481[12:00<29:13,70.18it/s] 29%|##9       |51170/173481[12:10<29:02,70.18it/s] 37%|###6      |63364/173481[15:00<25:52,70.94it/s] 37%|###6      |64167/173481[15:10<25:40,70.94it/s] 44%|####3     |75717/173481[18:00<23:21,69.76it/s] 44%|####4     |76383/173481[18:10<23:11,69.76it/s] 50%|#####     |87292/173481[21:00<21:27,66.92it/s] 51%|#####     |88017/173481[21:11<21:17,66.92it/s] 57%|#####7    |99356/173481[24:00<18:26,66.97it/s] 58%|#####7    |100146/173481[24:11<18:15,66.97it/s] 65%|######4   |112228/173481[27:00<14:45,69.16it/s] 65%|######5   |112993/173481[27:11<14:34,69.16it/s] 72%|#######2  |125036/173481[30:00<11:30,70.14it/s] 73%|#######2  |125847/173481[30:11<11:19,70.14it/s] 79%|#######9  |137481/173481[33:00<08:36,69.64it/s] 80%|#######9  |138276/173481[33:11<08:25,69.64it/s] 87%|########6 |150382/173481[36:00<05:27,70.64it/s] 87%|########7 |151178/173481[36:11<05:15,70.64it/s] 94%|#########4|163088/173481[39:00<02:27,70.61it/s] 95%|#########4|163958/173481[39:11<02:14,70.61it/s]100%|##########|173481/173481[41:30<00:00,69.65it/s]
+[32m[0321 06:23:31 @base.py:257][0m Epoch 28 (global_step 4510506) finished, time:2490.61 sec.
+[32m[0321 06:23:32 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-4510506.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:58<00:00,158.88it/s]
+25
+[32m[0321 06:25:30 @monitor.py:363][0m QueueInput/queue_size: 0.66867
+[32m[0321 06:25:30 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 45.783
+[32m[0321 06:25:30 @monitor.py:363][0m activation-summaries/output-rms: 0.037855
+[32m[0321 06:25:30 @monitor.py:363][0m cross_entropy_loss: 1.8482
+[32m[0321 06:25:30 @monitor.py:363][0m lr: 1.9531e-06
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72727
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/conv0/b-rms: 9.2257e-05
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.71576
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.389
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/linear0/W-rms: 0.51139
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/linear1/W-rms: 0.41255
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39966
+[32m[0321 06:25:30 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 06:25:30 @monitor.py:363][0m train-error-top1: 0.48818
+[32m[0321 06:25:30 @monitor.py:363][0m val-error-top1: 0.53651
+[32m[0321 06:25:30 @monitor.py:363][0m val-utt-error: 0.16831
+[32m[0321 06:25:30 @monitor.py:363][0m validation_cost: 2.0809
+[32m[0321 06:25:30 @monitor.py:363][0m wd_cost: 3.6461e-06
+[32m[0321 06:25:30 @group.py:42][0m Callbacks took 118.769 sec in total. InferenceRunner: 118.473sec
+[32m[0321 06:25:30 @base.py:247][0m Start Epoch 29 ...
+  0%|          |0/173481[00:00<?,?it/s]  7%|7         |12914/173481[03:00<37:18,71.74it/s]  8%|7         |13614/173481[03:10<37:08,71.74it/s] 15%|#4        |25213/173481[06:00<35:18,69.98it/s] 15%|#4        |25926/173481[06:10<35:08,69.98it/s] 22%|##1       |37984/173481[09:00<32:02,70.46it/s] 22%|##2       |38684/173481[09:10<31:53,70.46it/s] 29%|##9       |50785/173481[12:00<28:53,70.78it/s] 30%|##9       |51510/173481[12:10<28:43,70.78it/s] 37%|###6      |63583/173481[15:00<25:49,70.93it/s] 37%|###7      |64368/173481[15:10<25:38,70.93it/s] 44%|####3     |76309/173481[18:00<22:52,70.82it/s] 44%|####4     |77095/173481[18:10<22:41,70.82it/s] 52%|#####1    |89977/173481[21:00<18:59,73.28it/s] 52%|#####2    |90798/173481[21:11<18:48,73.28it/s] 60%|#####9    |103733/173481[24:00<15:32,74.82it/s] 60%|######    |104466/173481[24:11<15:22,74.82it/s] 67%|######6   |116017/173481[27:00<13:25,71.37it/s] 67%|######7   |116790/173481[27:11<13:14,71.37it/s] 74%|#######3  |128306/173481[30:00<10:47,69.79it/s] 74%|#######4  |129068/173481[30:11<10:36,69.79it/s] 81%|########1 |140553/173481[33:00<07:57,68.90it/s] 81%|########1 |141338/173481[33:11<07:46,68.90it/s] 89%|########8 |153679/173481[36:00<04:39,70.85it/s] 89%|########9 |154542/173481[36:11<04:27,70.85it/s] 96%|#########6|167012/173481[39:00<01:29,72.42it/s] 97%|#########6|167874/173481[39:12<01:17,72.42it/s]100%|##########|173481/173481[40:30<00:00,71.38it/s]
+[32m[0321 07:06:01 @base.py:257][0m Epoch 29 (global_step 4683987) finished, time:2430.43 sec.
+[32m[0321 07:06:01 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-4683987.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[02:05<00:00,150.00it/s]
+26
+[32m[0321 07:08:07 @monitor.py:363][0m QueueInput/queue_size: 0.44605
+[32m[0321 07:08:07 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 45.64
+[32m[0321 07:08:07 @monitor.py:363][0m activation-summaries/output-rms: 0.038467
+[32m[0321 07:08:07 @monitor.py:363][0m cross_entropy_loss: 1.8672
+[32m[0321 07:08:07 @monitor.py:363][0m lr: 1.9531e-06
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72723
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/conv0/b-rms: 9.2273e-05
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.71686
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.389
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/linear0/W-rms: 0.51184
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/linear1/W-rms: 0.41279
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/linear2/W-rms: 0.39988
+[32m[0321 07:08:07 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 07:08:07 @monitor.py:363][0m train-error-top1: 0.49545
+[32m[0321 07:08:07 @monitor.py:363][0m val-error-top1: 0.5529
+[32m[0321 07:08:07 @monitor.py:363][0m val-utt-error: 0.1783
+[32m[0321 07:08:07 @monitor.py:363][0m validation_cost: 2.1831
+[32m[0321 07:08:07 @monitor.py:363][0m wd_cost: 3.6541e-06
+[32m[0321 07:08:07 @group.py:42][0m Callbacks took 125.814 sec in total. InferenceRunner: 125.491sec
+[32m[0321 07:08:07 @base.py:247][0m Start Epoch 30 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|8         |14389/173481[03:00<33:10,79.94it/s]  9%|8         |15145/173481[03:10<33:00,79.94it/s] 16%|#5        |27461/173481[06:00<31:58,76.10it/s] 16%|#6        |28214/173481[06:10<31:48,76.10it/s] 24%|##3       |41462/173481[09:00<28:36,76.93it/s] 24%|##4       |42177/173481[09:10<28:26,76.93it/s] 32%|###1      |54714/173481[12:00<26:18,75.24it/s] 32%|###2      |55533/173481[12:10<26:07,75.24it/s] 39%|###9      |68290/173481[15:00<23:16,75.33it/s] 40%|###9      |69112/173481[15:10<23:05,75.33it/s] 47%|####7     |82138/173481[18:00<19:59,76.12it/s] 48%|####7     |82949/173481[18:10<19:49,76.12it/s] 55%|#####5    |95702/173481[21:00<17:06,75.74it/s] 56%|#####5    |96531/173481[21:11<16:56,75.74it/s] 63%|######3   |109496/173481[24:00<13:59,76.18it/s] 64%|######3   |110367/173481[24:11<13:48,76.18it/s] 71%|#######   |122680/173481[27:00<11:20,74.68it/s] 71%|#######1  |123467/173481[27:11<11:09,74.68it/s] 78%|#######8  |135521/173481[30:00<08:40,72.97it/s] 79%|#######8  |136413/173481[30:11<08:27,72.97it/s] 86%|########6 |149392/173481[33:00<05:21,74.96it/s] 87%|########6 |150347/173481[33:11<05:08,74.96it/s] 94%|#########4|163336/173481[36:00<02:13,76.19it/s] 95%|#########4|164199/173481[36:11<02:01,76.19it/s]100%|##########|173481/173481[38:16<00:00,75.55it/s]
+[32m[0321 07:46:23 @base.py:257][0m Epoch 30 (global_step 4857468) finished, time:2296.34 sec.
+[32m[0321 07:46:23 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-4857468.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:54<00:00,164.33it/s]
+27
+[32m[0321 07:48:18 @monitor.py:363][0m QueueInput/queue_size: 0.77588
+[32m[0321 07:48:18 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 45.569
+[32m[0321 07:48:18 @monitor.py:363][0m activation-summaries/output-rms: 0.036507
+[32m[0321 07:48:18 @monitor.py:363][0m cross_entropy_loss: 1.952
+[32m[0321 07:48:18 @monitor.py:363][0m lr: 9.7656e-07
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72724
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/conv0/b-rms: 9.234e-05
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.71753
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3892
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/linear0/W-rms: 0.51208
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/linear1/W-rms: 0.41292
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/linear2/W-rms: 0.4
+[32m[0321 07:48:18 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 07:48:18 @monitor.py:363][0m train-error-top1: 0.51498
+[32m[0321 07:48:18 @monitor.py:363][0m val-error-top1: 0.53405
+[32m[0321 07:48:18 @monitor.py:363][0m val-utt-error: 0.1647
+[32m[0321 07:48:18 @monitor.py:363][0m validation_cost: 2.071
+[32m[0321 07:48:18 @monitor.py:363][0m wd_cost: 7.3174e-07
+[32m[0321 07:48:18 @group.py:42][0m Callbacks took 115.028 sec in total. InferenceRunner: 114.557sec
+[32m[0321 07:48:18 @base.py:247][0m Start Epoch 31 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|7         |13765/173481[03:00<34:48,76.47it/s]  8%|8         |14540/173481[03:10<34:38,76.47it/s] 16%|#5        |27031/173481[06:00<32:31,75.05it/s] 16%|#6        |27822/173481[06:10<32:20,75.05it/s] 23%|##3       |40597/173481[09:00<29:27,75.20it/s] 24%|##3       |41366/173481[09:10<29:16,75.20it/s] 31%|###1      |54466/173481[12:00<26:03,76.11it/s] 32%|###1      |55211/173481[12:10<25:53,76.11it/s] 39%|###9      |68077/173481[15:00<23:09,75.86it/s] 40%|###9      |68868/173481[15:10<22:59,75.86it/s] 47%|####6     |81452/173481[18:00<20:25,75.07it/s] 47%|####7     |82284/173481[18:10<20:14,75.07it/s] 55%|#####4    |94957/173481[21:00<17:26,75.04it/s] 55%|#####5    |95760/173481[21:11<17:15,75.04it/s] 62%|######2   |108359/173481[24:00<14:31,74.75it/s] 63%|######2   |109164/173481[24:11<14:20,74.75it/s] 70%|#######   |121675/173481[27:00<11:36,74.36it/s] 71%|#######   |122514/173481[27:11<11:25,74.36it/s] 78%|#######7  |134617/173481[30:00<08:51,73.10it/s] 78%|#######8  |135372/173481[30:11<08:41,73.10it/s] 85%|########4 |147331/173481[33:00<06:03,71.84it/s] 85%|########5 |147989/173481[33:11<05:54,71.84it/s] 92%|#########2|160144/173481[36:00<03:06,71.51it/s] 93%|#########2|161062/173481[36:11<02:53,71.51it/s]100%|#########9|173197/173481[39:00<00:03,72.00it/s]100%|##########|173481/173481[39:04<00:00,74.01it/s]
+[32m[0321 08:27:22 @base.py:257][0m Epoch 31 (global_step 5030949) finished, time:2344.07 sec.
+[32m[0321 08:27:22 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-5030949.
+[32m[0321 08:27:22 @saver.py:155][0m Model with minimum 'val-error-top1' saved.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:53<00:00,165.33it/s]
+28
+[32m[0321 08:29:16 @monitor.py:363][0m QueueInput/queue_size: 0.47006
+[32m[0321 08:29:16 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 45.892
+[32m[0321 08:29:16 @monitor.py:363][0m activation-summaries/output-rms: 0.038536
+[32m[0321 08:29:16 @monitor.py:363][0m cross_entropy_loss: 1.8812
+[32m[0321 08:29:16 @monitor.py:363][0m lr: 9.7656e-07
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72722
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/conv0/b-rms: 9.233e-05
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.71807
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3892
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/linear0/W-rms: 0.51227
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/linear1/W-rms: 0.41303
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/linear2/W-rms: 0.4001
+[32m[0321 08:29:16 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 08:29:16 @monitor.py:363][0m train-error-top1: 0.50368
+[32m[0321 08:29:16 @monitor.py:363][0m val-error-top1: 0.5477
+[32m[0321 08:29:16 @monitor.py:363][0m val-utt-error: 0.1697
+[32m[0321 08:29:16 @monitor.py:363][0m validation_cost: 2.1403
+[32m[0321 08:29:16 @monitor.py:363][0m wd_cost: 7.325e-07
+[32m[0321 08:29:16 @group.py:42][0m Callbacks took 114.203 sec in total. InferenceRunner: 113.861sec
+[32m[0321 08:29:16 @base.py:247][0m Start Epoch 32 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|8         |14080/173481[03:00<33:58,78.21it/s]  9%|8         |14847/173481[03:10<33:48,78.21it/s] 16%|#5        |27630/173481[06:00<31:41,76.71it/s] 16%|#6        |28405/173481[06:10<31:31,76.71it/s] 24%|##3       |41040/173481[09:00<29:12,75.59it/s] 24%|##4       |41830/173481[09:10<29:01,75.59it/s] 32%|###1      |54668/173481[12:00<26:10,75.65it/s] 32%|###2      |55527/173481[12:10<25:59,75.65it/s] 40%|####      |69870/173481[15:00<21:38,79.81it/s] 41%|####      |70832/173481[15:10<21:26,79.81it/s] 50%|####9     |86449/173481[18:00<16:57,85.52it/s] 50%|#####     |87435/173481[18:10<16:46,85.52it/s] 59%|#####9    |103042/173481[21:00<13:13,88.72it/s] 60%|#####9    |104056/173481[21:11<13:02,88.72it/s] 69%|######9   |120281/173481[24:00<09:37,92.11it/s] 70%|######9   |121344/173481[24:11<09:26,92.11it/s] 79%|#######9  |137718/173481[27:00<06:18,94.43it/s] 80%|########  |138823/173481[27:11<06:07,94.43it/s] 90%|########9 |155365/173481[30:00<03:08,96.20it/s] 90%|######### |156459/173481[30:11<02:56,96.20it/s]100%|#########9|172870/173481[33:00<00:06,96.72it/s]100%|##########|173481/173481[33:06<00:00,87.34it/s]
+[32m[0321 09:02:23 @base.py:257][0m Epoch 32 (global_step 5204430) finished, time:1986.32 sec.
+[32m[0321 09:02:23 @saver.py:84][0m Model saved to train_log/cnn_w_4_a_32_quant_ends_False/model-5204430.
+  0%|          |0/18822[00:00<?,?it/s]100%|##########|18822/18822[01:48<00:00,174.11it/s]
+29
+[32m[0321 09:04:11 @monitor.py:363][0m QueueInput/queue_size: 0.88922
+[32m[0321 09:04:11 @monitor.py:363][0m activation-summaries/last_linear/output-rms: 46.154
+[32m[0321 09:04:11 @monitor.py:363][0m activation-summaries/output-rms: 0.038658
+[32m[0321 09:04:11 @monitor.py:363][0m cross_entropy_loss: 1.8548
+[32m[0321 09:04:11 @monitor.py:363][0m lr: 4.8828e-07
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/conv0/W-rms: 0.72722
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/conv0/b-rms: 9.2334e-05
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/last_linear/W-rms: 0.71859
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/last_linear/b-rms: 1.3892
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/linear0/W-rms: 0.51245
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/linear0/b-rms: 0.084925
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/linear1/W-rms: 0.41314
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/linear1/b-rms: 0.090032
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/linear2/W-rms: 0.4002
+[32m[0321 09:04:11 @monitor.py:363][0m param-summary/linear2/b-rms: 0.089217
+[32m[0321 09:04:11 @monitor.py:363][0m train-error-top1: 0.48681
+[32m[0321 09:04:11 @monitor.py:363][0m val-error-top1: 0.5326
+[32m[0321 09:04:11 @monitor.py:363][0m val-utt-error: 0.16799
+[32m[0321 09:04:11 @monitor.py:363][0m validation_cost: 2.0764
+[32m[0321 09:04:11 @monitor.py:363][0m wd_cost: 7.3324e-07
+[32m[0321 09:04:11 @group.py:42][0m Callbacks took 108.459 sec in total. InferenceRunner: 108.118sec
+[32m[0321 09:04:11 @base.py:247][0m Start Epoch 33 ...
+  0%|          |0/173481[00:00<?,?it/s]  8%|8         |14615/173481[03:00<32:36,81.19it/s]  9%|8         |15408/173481[03:10<32:26,81.19it/s] 15%|#4        |25967/173481[06:00<34:37,70.99it/s] 15%|#5        |26574/173481[06:10<34:29,70.99it/s] 22%|##1       |38096/173481[09:00<32:38,69.14it/s] 22%|##2       |38778/173481[09:10<32:28,69.14it/s] 29%|##8       |50279/173481[12:00<30:01,68.40it/s] 29%|##9       |50958/173481[12:10<29:51,68.40it/s] 36%|###5      |62407/173481[15:00<27:16,67.87it/s] 36%|###6      |63125/173481[15:10<27:06,67.87it/s]slurmstepd: *** STEP 70356.0 ON sls-titanx-1 CANCELLED AT 2018-03-21T09:21:07 ***
+slurmstepd: *** JOB 70356 ON sls-titanx-1 CANCELLED AT 2018-03-21T09:21:07 ***
+srun: got SIGCONT

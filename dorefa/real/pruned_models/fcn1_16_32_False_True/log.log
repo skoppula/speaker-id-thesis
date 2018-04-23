@@ -1,0 +1,424 @@
+[32m[0409 11:22:38 @logger.py:74][0m Argv: prune.py --model=fcn1 --bitw=16 --bita=32 --quant_ends=False --dorefa=True
+[32m[0409 11:22:38 @prune.py:113][0m 18822 utterances per val epoch
+[32m[0409 11:22:38 @prune.py:114][0m Using host: sls-520-3
+[32m[0409 11:22:38 @prune.py:124][0m On prune rate 0
+[32m[0409 11:22:39 @registry.py:122][0m linear0 input: [None, 1000]
+[32m[0409 11:22:39 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:22:39 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:22:39 @registry.py:130][0m linear0 output: [None, 256]
+[32m[0409 11:22:39 @registry.py:122][0m linear1 input: [None, 256]
+[32m[0409 11:22:39 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:22:39 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:22:39 @registry.py:130][0m linear1 output: [None, 256]
+[32m[0409 11:22:39 @registry.py:122][0m linear2 input: [None, 256]
+[32m[0409 11:22:39 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:22:39 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:22:39 @registry.py:130][0m linear2 output: [None, 256]
+[32m[0409 11:22:39 @registry.py:122][0m linear3 input: [None, 256]
+[32m[0409 11:22:39 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:22:39 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:22:39 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:22:39 @registry.py:130][0m linear3 output: [None, 256]
+[32m[0409 11:22:39 @registry.py:122][0m last_linear input: [None, 256]
+[32m[0409 11:22:39 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:22:39 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:22:39 @registry.py:130][0m last_linear output: [None, 255]
+[32m[0409 11:22:39 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:22:39 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:22:39 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:22:40 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:22:40 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:22:40 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:22:40 @develop.py:85][0m [5m[31mWRN[0m [Deprecated] Calling a predictor with one datapoint will be deprecated after 01 Mar. Call it with positional arguments instead!
+[32m[0409 11:22:56 @prune.py:154][0m error: [0.11126961]
+[32m[0409 11:22:56 @prune.py:124][0m On prune rate 0.001
+[32m[0409 11:22:56 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:22:56 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:22:56 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:22:56 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:22:56 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:22:56 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:22:56 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:22:56 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:22:56 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:22:56 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:22:56 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:22:56 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:22:56 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:22:56 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:22:57 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:22:57 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:22:57 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:23:12 @prune.py:154][0m error: [0.11126961]
+[32m[0409 11:23:12 @prune.py:124][0m On prune rate 0.005
+[32m[0409 11:23:13 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:23:13 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:23:13 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:23:13 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:23:13 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:23:13 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:23:13 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:23:13 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:23:13 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:23:13 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:23:13 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:23:13 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:23:13 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:23:13 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:23:13 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:23:13 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:23:13 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:23:29 @prune.py:154][0m error: [0.10413695]
+[32m[0409 11:23:29 @prune.py:124][0m On prune rate 0.01
+[32m[0409 11:23:29 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:23:29 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:23:29 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:23:29 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:23:29 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:23:29 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:23:29 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:23:29 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:23:29 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:23:29 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:23:29 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:23:29 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:23:29 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:23:29 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:23:30 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:23:30 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:23:30 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:23:45 @prune.py:154][0m error: [0.10984308]
+[32m[0409 11:23:45 @prune.py:124][0m On prune rate 0.02
+[32m[0409 11:23:46 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:23:46 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:23:46 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:23:46 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:23:46 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:23:46 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:23:46 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:23:46 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:23:46 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:23:46 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:23:46 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:23:46 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:23:46 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:23:46 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:23:46 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:23:46 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:23:46 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:24:02 @prune.py:154][0m error: [0.13409415]
+[32m[0409 11:24:02 @prune.py:124][0m On prune rate 0.03
+[32m[0409 11:24:02 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:24:02 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:24:02 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:24:02 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:24:02 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:24:02 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:24:02 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:24:02 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:24:02 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:24:02 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:24:02 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:24:02 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:24:02 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:24:02 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:02 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:24:02 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:02 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:24:18 @prune.py:154][0m error: [0.13409415]
+[32m[0409 11:24:18 @prune.py:124][0m On prune rate 0.04
+[32m[0409 11:24:19 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:24:19 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:24:19 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:24:19 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:24:19 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:24:19 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:24:19 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:24:19 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:24:19 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:24:19 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:24:19 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:24:19 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:24:19 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:24:19 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:19 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:24:19 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:19 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:24:34 @prune.py:154][0m error: [0.16833096]
+[32m[0409 11:24:34 @prune.py:124][0m On prune rate 0.05
+[32m[0409 11:24:35 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:24:35 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:24:35 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:24:35 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:24:35 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:24:35 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:24:35 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:24:35 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:24:35 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:24:35 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:24:35 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:24:35 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:24:35 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:24:35 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:35 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:24:35 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:35 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:24:51 @prune.py:154][0m error: [0.2125535]
+[32m[0409 11:24:51 @prune.py:124][0m On prune rate 0.1
+[32m[0409 11:24:51 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:24:51 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:24:51 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:24:51 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:24:51 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:24:51 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:24:51 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:24:51 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:24:51 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:24:52 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:24:52 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:24:52 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:24:52 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:24:52 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:24:52 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:24:52 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:24:52 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:24:52 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:24:52 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:24:52 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:24:52 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:25:07 @prune.py:154][0m error: [0.32524964]
+[32m[0409 11:25:07 @prune.py:124][0m On prune rate 0.15
+[32m[0409 11:25:08 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:25:08 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:25:08 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:25:08 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:25:08 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:25:08 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:25:08 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:25:08 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:25:08 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:25:08 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:25:08 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:25:08 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:25:08 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:25:08 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:25:08 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:25:08 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:25:08 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:25:24 @prune.py:154][0m error: [0.54636234]
+[32m[0409 11:25:24 @prune.py:124][0m On prune rate 0.25
+[32m[0409 11:25:24 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:25:24 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:25:24 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:25:24 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:25:24 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:25:24 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:25:24 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:25:24 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:25:24 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:25:24 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:25:24 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:25:24 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:25:24 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:25:24 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:25:25 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:25:25 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:25:25 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:25:41 @prune.py:154][0m error: [0.79172611]
+[32m[0409 11:25:41 @prune.py:124][0m On prune rate 0.5
+[32m[0409 11:25:41 @drf_run.py:67][0m Not quantizing linear0/W
+[32m[0409 11:25:41 @drf_run.py:67][0m Not quantizing linear0/b
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear0/bn/beta
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear0/bn/gamma
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear0/bn/mean/EMA
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear0/bn/variance/EMA
+[32m[0409 11:25:41 @drf_run.py:70][0m Quantizing weight linear1/W
+[32m[0409 11:25:41 @drf_run.py:70][0m Quantizing weight linear1/b
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear1/bn/beta
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear1/bn/gamma
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear1/bn/mean/EMA
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear1/bn/variance/EMA
+[32m[0409 11:25:41 @drf_run.py:70][0m Quantizing weight linear2/W
+[32m[0409 11:25:41 @drf_run.py:70][0m Quantizing weight linear2/b
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear2/bn/beta
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear2/bn/gamma
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear2/bn/mean/EMA
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear2/bn/variance/EMA
+[32m[0409 11:25:41 @drf_run.py:70][0m Quantizing weight linear3/W
+[32m[0409 11:25:41 @drf_run.py:70][0m Quantizing weight linear3/b
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear3/bn/beta
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear3/bn/gamma
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear3/bn/mean/EMA
+[32m[0409 11:25:41 @drf_run.py:58][0m Not quantizing linear3/bn/variance/EMA
+[32m[0409 11:25:41 @drf_run.py:64][0m Not quantizing last_linear/W
+[32m[0409 11:25:41 @drf_run.py:64][0m Not quantizing last_linear/b
+[32m[0409 11:25:41 @drf_run.py:112][0m Adding activation tensors to summary: [<tf.Tensor 'linear0/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear1/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear2/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'linear3/bn/output:0' shape=(?, 256) dtype=float32>, <tf.Tensor 'last_linear/output:0' shape=(?, 255) dtype=float32>, <tf.Tensor 'output:0' shape=(?, 255) dtype=float32>]
+[32m[0409 11:25:41 @drf_run.py:123][0m Parameter count: {'mults': 519936, 'weights': 520191}
+[32m[0409 11:25:41 @collection.py:134][0m New collections created in : tf.GraphKeys.GLOBAL_STEP
+[32m[0409 11:25:42 @sessinit.py:206][0m Variables to restore from dict: linear3/bn/beta:0, last_linear/W:0, linear0/bn/beta:0, linear1/W:0, linear1/bn/variance/EMA:0, linear1/bn/mean/EMA:0, linear2/bn/beta:0, linear0/bn/mean/EMA:0, linear1/bn/beta:0, linear3/W:0, linear0/b:0, linear2/W:0, global_step:0, linear3/b:0, linear1/bn/gamma:0, linear0/bn/gamma:0, linear0/bn/variance/EMA:0, linear2/bn/gamma:0, linear2/bn/variance/EMA:0, linear3/bn/gamma:0, linear2/b:0, linear3/bn/variance/EMA:0, linear2/bn/mean/EMA:0, linear3/bn/mean/EMA:0, last_linear/b:0, linear1/b:0, linear0/W:0
+[32m[0409 11:25:42 @sessinit.py:89][0m [5m[31mWRN[0m The following variables are in the dict, but not found in the graph: EMA/QueueInput/queue_size/biased:0, EMA/QueueInput/queue_size/local_step:0, EMA/QueueInput/queue_size:0, EMA/cross_entropy_loss/biased:0, EMA/cross_entropy_loss/local_step:0, EMA/cross_entropy_loss:0, EMA/train-error-top1/biased:0, EMA/train-error-top1/local_step:0, EMA/train-error-top1:0, EMA/wd_cost/biased:0, EMA/wd_cost/local_step:0, EMA/wd_cost:0, beta1_power:0, beta2_power:0, last_linear/W/Adam:0, last_linear/W/Adam_1:0, last_linear/b/Adam:0, last_linear/b/Adam_1:0, linear0/W/Adam:0, linear0/W/Adam_1:0, linear0/b/Adam:0, linear0/b/Adam_1:0, linear0/bn/beta/Adam:0, linear0/bn/beta/Adam_1:0, linear0/bn/gamma/Adam:0, linear0/bn/gamma/Adam_1:0, linear1/W/Adam:0, linear1/W/Adam_1:0, linear1/b/Adam:0, linear1/b/Adam_1:0, linear1/bn/beta/Adam:0, linear1/bn/beta/Adam_1:0, linear1/bn/gamma/Adam:0, linear1/bn/gamma/Adam_1:0, linear2/W/Adam:0, linear2/W/Adam_1:0, linear2/b/Adam:0, linear2/b/Adam_1:0, linear2/bn/beta/Adam:0, linear2/bn/beta/Adam_1:0, linear2/bn/gamma/Adam:0, linear2/bn/gamma/Adam_1:0, linear3/W/Adam:0, linear3/W/Adam_1:0, linear3/b/Adam:0, linear3/b/Adam_1:0, linear3/bn/beta/Adam:0, linear3/bn/beta/Adam_1:0, linear3/bn/gamma/Adam:0, linear3/bn/gamma/Adam_1:0
+[32m[0409 11:25:42 @sessinit.py:219][0m Restoring from dict ...
+[32m[0409 11:25:58 @prune.py:154][0m error: [0.978602]
+[32m[0409 11:25:58 @prune.py:156][0m Errors:[0.11126961483594865, 0.11126961483594865, 0.10413694721825963, 0.10984308131241084, 0.1340941512125535, 0.1340941512125535, 0.16833095577746077, 0.21255349500713266, 0.3252496433666191, 0.5463623395149786, 0.7917261055634808, 0.978601997146933]
+[32m[0409 11:25:58 @prune.py:157][0m Sparsities:[0.0, 0.0009899945320069453, 0.004988344541120267, 0.009982444864403365, 0.01999175004556661, 0.029981869286187082, 0.03999117446735032, 0.049975537925807965, 0.09998177335648437, 0.14998800878716076, 0.24999856105445928, 0.49999904070297285]
